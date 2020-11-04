@@ -47,3 +47,8 @@ body {
 .default-color{
     color:#FEBC39 !important;
 }
+
+.btn-rounded{
+    border-radius: 40px;
+    text-transform: uppercase;
+}
