@@ -6,7 +6,9 @@ function Intro() {
     <Container className="info">
       <Row className="h-100 align-items-center">
         <Col className="text-light ">
-          <h6 className="font-weight-bold px-3 default-color">HELLO!</h6>
+          <h6 className="font-weight-bold px-3 default-color">
+            HELLO! <span className="text-light ml-2">नमस्ते</span>
+          </h6>
           <h1 className="font-weight-bold px-3">
             I'm <span className="default-color">Bishal</span>
           </h1>
