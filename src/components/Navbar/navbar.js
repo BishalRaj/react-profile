@@ -4,7 +4,13 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 function NavBar() {
   return (
     <Container className="py-3">
-      <Navbar collapseOnSelect sticky="top" expand="lg" variant="dark">
+      <Navbar
+        collapseOnSelect
+        sticky="top"
+        expand="lg"
+        variant="dark"
+        style={{ padding: "0px" }}
+      >
         <Navbar.Brand style={{ fontWeight: "1200 !important" }}>
           <h4>Bishal</h4>
         </Navbar.Brand>

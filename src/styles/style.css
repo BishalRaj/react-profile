@@ -7,6 +7,28 @@ body {
     color: #999999 !important;
 }
 
+
+.c-h-600{
+    height:600px;
+}
+
+.default-color{
+    color:#FEBC39 !important;
+}
+
+.default-bg-font{
+    font-size: 60px;
+    font-weight: 750 !important;
+}
+.default-md-font{
+    font-size: 50px;
+    font-weight: 600 !important;
+}
+.default-sm-font{
+    /* font-size: 50px; */
+    font-weight: 600 !important;
+}
+
 .active{
     color: #FEBC39 !important;
 }
@@ -40,13 +62,7 @@ body {
     transform:translateX(-50%) scaleX(1);
 }
 
-.info{
-    height:500px;
-}
 
-.default-color{
-    color:#FEBC39 !important;
-}
 
 .btn-rounded{
     border-radius: 40px;
