@@ -4,7 +4,7 @@ import logo from "../../images/one.png";
 
 function Intro() {
   return (
-    <Container className="c-h-600">
+    <Container className="c-h-700">
       <Row className="h-100 align-items-center">
         <Col className="text-light">
           <h6 className="font-weight-bold  default-color mb-4">
