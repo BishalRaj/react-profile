@@ -11,7 +11,7 @@ function resume() {
           <p className="default-sm-font m-0 text-white">
             Bachelor Degree of Computing
           </p>
-          <p>Coventry University</p>
+          <p className="letter-spacing-2">Coventry University</p>
           <p>
             A small river named Bishal flows by their place and supplies it with
             the necessary regelialia. It is a paradisematic country, in which

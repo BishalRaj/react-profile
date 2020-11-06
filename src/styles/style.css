@@ -56,6 +56,15 @@ body {
 .default-xxs-font{
     font-size: 14px !important;
     font-weight: 600 !important;
+}
+
+.letter-spacing-1{
+    letter-spacing: 1px;
+}
+.letter-spacing-2{
+    letter-spacing: 2px;
+}
+.letter-spacing-3{
     letter-spacing: 3px;
 }
 

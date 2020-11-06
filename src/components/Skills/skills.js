@@ -10,7 +10,7 @@ function skills() {
       <Col lg={6} md={6} sm={12} xs={12} className="mb-4" key={index}>
         <div className="w-100">
           <p className="mx-0 my-1 default-xs-font text-white">
-            <span className="w-75">Node.JS</span>
+            <span className="w-75 ">Node.JS</span>
             <span className="w-25 float-right text-end">{now}%</span>
           </p>
         </div>
