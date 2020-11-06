@@ -1,71 +1,23 @@
 import React from "react";
-import { Col, Container, Image, Row } from "react-bootstrap";
+import { Button, Col, Container, Image, Row } from "react-bootstrap";
 import logo from "../../images/one.png";
 
 function about() {
   return (
-    <Container className="c-h-600">
+    <Container className="my-5">
       <Row>
-        <Col className="d-flex flex-wrap align-items-center">
-          <Image
-            src={logo}
-            className="w-100 my-auto"
-            // style={{ flexWrap: "wrap", display: "flex", alignItems: "center" }}
-          />
+        <Col className="d-flex flex-wrap align-items-center justify-content-center">
+          <Image src={logo} className="w-100 my-auto" />
         </Col>
         <Col className="">
-          <Row>
-            <Col className="font-weight-bold text-light default-md-font">
-              About Me
-            </Col>
-          </Row>
+          <div className="w-100 text-start font-weight-bold text-light default-md-font">
+            About Me
+          </div>
 
-          {/* <Row>
-            <Col className="default-sm-font text-light my-2">Name:</Col>
-            <Col className="text-secondary font-weight-normal">
-              Bishal Raj Shakya
-            </Col>
-            <Col />
-          </Row>
-          <Row>
-            <Col className="default-sm-font text-light my-2">
-              Date of birth:
-            </Col>
-            <Col className="text-secondary font-weight-normal">
-              Bishal Raj Shakya
-            </Col>
-            <Col />
-          </Row>
-          <Row>
-            <Col className="default-sm-font text-light my-2">Address:</Col>
-            <Col className="text-secondary font-weight-normal">
-              Bishal Raj Shakya
-            </Col>
-            <Col />
-          </Row>
-          <Row>
-            <Col className="default-sm-font text-light my-2">Zip code:</Col>
-            <Col className="text-secondary font-weight-normal">
-              Bishal Raj Shakya
-            </Col>
-            <Col />
-          </Row>
-          <Row>
-            <Col className="default-sm-font  text-light my-2">Email:</Col>
-            <Col className="text-secondary font-weight-normal">
-              Bishal Raj Shakya
-            </Col>
-            <Col />
-          </Row>
-          <Row>
-            <Col className=" default-sm-font text-light my-2">Phone:</Col>
-            <Col className="text-secondary font-weight-normal">
-              Bishal Raj Shakya
-            </Col>
-            <Col />
-          </Row> */}
-
-          {/* <Row></Row> */}
+          <p className="mb-4 mt-1">
+            A small river named Bishal flows by their place and supplies it with
+            the necessary regelialia.
+          </p>
 
           <ul style={{ listStyle: "none" }} className="p-0">
             <li className="d-flex my-2">
@@ -107,6 +59,16 @@ function about() {
               <span className="w-75  text-start">+977-9843219471</span>
             </li>
           </ul>
+
+          <p
+            className="default-sm-font text-light w-100"
+            style={{ fontSize: "25px" }}
+          >
+            <span className="default-color">5</span> Project complete
+          </p>
+          <Button variant="warning" className="btn-rounded p-2">
+            <strong>DOWNLOAD CV</strong>
+          </Button>
         </Col>
       </Row>
     </Container>
