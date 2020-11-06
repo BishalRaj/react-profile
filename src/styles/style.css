@@ -111,3 +111,11 @@ body {
     border-radius: 40px;
     text-transform: uppercase;
 }
+
+
+@media (max-width: 768px) {
+    .navbar{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+  }

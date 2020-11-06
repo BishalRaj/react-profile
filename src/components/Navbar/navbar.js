@@ -3,20 +3,29 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 
 function NavBar() {
   return (
-    <Container className="py-3">
+    <Container>
       <Navbar
         collapseOnSelect
-        sticky="top"
+        // sticky="top"
+        fixed="top"
         expand="lg"
         variant="dark"
-        style={{ padding: "0px" }}
+        // style={{ padding: "0px" }}
+        className="px-4 py-3 mx-5"
+        style={{ backgroundColor: "black" }}
       >
-        <Navbar.Brand style={{ fontWeight: "1200 !important" }}>
+        <Navbar.Brand
+          style={{ fontWeight: "1200 !important" }}
+          className="mx-5"
+        >
           <h4>Bishal</h4>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto">
+        <Navbar.Collapse
+          id="responsive-navbar-nav"
+          className="mr-5 justify-content-end"
+        >
+          <Nav className="">
             <Nav.Link href="#home" className="navs mx-2  active">
               Home
             </Nav.Link>
