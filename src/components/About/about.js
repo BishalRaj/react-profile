@@ -4,9 +4,13 @@ import logo from "../../images/one.png";
 
 function about() {
   return (
-    <Container className="my-5">
+    <Container className="mb-5">
       <Row>
-        <Col className="d-flex flex-wrap align-items-center justify-content-center">
+        <Col
+          sm={0}
+          xs={0}
+          className="d-flex flex-wrap align-items-center justify-content-center"
+        >
           <Image src={logo} className="w-100 my-auto" />
         </Col>
         <Col className="">
@@ -21,19 +25,19 @@ function about() {
 
           <ul style={{ listStyle: "none" }} className="p-0">
             <li className="d-flex my-2">
-              <span className="default-sm-font text-light text-start w-25">
+              <span className="default-xs-font text-light text-start w-25">
                 Name:
               </span>
               <span className="w-75  text-start">Bishal Raj Shakya</span>
             </li>
             <li className="d-flex my-2">
-              <span className="default-sm-font text-light text-start w-25">
+              <span className="default-xs-font text-light text-start w-25">
                 Date of birth:
               </span>
               <span className="w-75  text-start">February 28, 1998</span>
             </li>
             <li className="d-flex my-2">
-              <span className="default-sm-font text-light text-start w-25">
+              <span className="default-xs-font text-light text-start w-25">
                 Address:
               </span>
               <span className="w-75  text-start">
@@ -41,19 +45,19 @@ function about() {
               </span>
             </li>
             <li className="d-flex my-2">
-              <span className="default-sm-font text-light text-start w-25">
+              <span className="default-xs-font text-light text-start w-25">
                 Zip code:
               </span>
               <span className="w-75  text-start">44700</span>
             </li>
             <li className="d-flex my-2">
-              <span className="default-sm-font text-light text-start w-25">
+              <span className="default-xs-font text-light text-start w-25">
                 Email:
               </span>
               <span className="w-75  text-start">bisal1shakya@gmail.com</span>
             </li>
             <li className="d-flex my-2">
-              <span className="default-sm-font text-light text-start w-25">
+              <span className="default-xs-font text-light text-start w-25">
                 Phone:
               </span>
               <span className="w-75  text-start">+977-9843219471</span>
@@ -61,7 +65,7 @@ function about() {
           </ul>
 
           <p
-            className="default-sm-font text-light w-100"
+            className="default-xs-font text-light w-100"
             style={{ fontSize: "25px" }}
           >
             <span className="default-color">5</span> Project complete
