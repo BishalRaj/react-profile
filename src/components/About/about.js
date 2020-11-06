@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
-import logo from "./one.png";
+import logo from "../../images/one.png";
 
 function about() {
   return (
@@ -66,6 +66,47 @@ function about() {
           </Row> */}
 
           {/* <Row></Row> */}
+
+          <ul style={{ listStyle: "none" }} className="p-0">
+            <li className="d-flex my-2">
+              <span className="default-sm-font text-light text-start w-25">
+                Name:
+              </span>
+              <span className="w-75  text-start">Bishal Raj Shakya</span>
+            </li>
+            <li className="d-flex my-2">
+              <span className="default-sm-font text-light text-start w-25">
+                Date of birth:
+              </span>
+              <span className="w-75  text-start">February 28, 1998</span>
+            </li>
+            <li className="d-flex my-2">
+              <span className="default-sm-font text-light text-start w-25">
+                Address:
+              </span>
+              <span className="w-75  text-start">
+                Bungamati, Lalitpur, Nepal
+              </span>
+            </li>
+            <li className="d-flex my-2">
+              <span className="default-sm-font text-light text-start w-25">
+                Zip code:
+              </span>
+              <span className="w-75  text-start">44700</span>
+            </li>
+            <li className="d-flex my-2">
+              <span className="default-sm-font text-light text-start w-25">
+                Email:
+              </span>
+              <span className="w-75  text-start">bisal1shakya@gmail.com</span>
+            </li>
+            <li className="d-flex my-2">
+              <span className="default-sm-font text-light text-start w-25">
+                Phone:
+              </span>
+              <span className="w-75  text-start">+977-9843219471</span>
+            </li>
+          </ul>
         </Col>
       </Row>
     </Container>

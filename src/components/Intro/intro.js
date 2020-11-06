@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Col, Container, Image, Row } from "react-bootstrap";
-import logo from "./one.png";
+import logo from "../../images/one.png";
 
 function Intro() {
   return (
