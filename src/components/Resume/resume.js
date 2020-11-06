@@ -9,7 +9,7 @@ function resume() {
       </p>
       <Row>
         <Col lg={6} md={6} sm={12} xs={12}>
-          <div className="mx-auto p-4" style={{ backgroundColor: "#1A1A1A" }}>
+          <div className="mx-auto p-4 default-bg-color-black">
             <p className="default-sm-font m-0 default-color">2017-2020</p>
             <p className="default-sm-font m-0 text-white">
               Bachelor Degree of Computing
@@ -23,7 +23,7 @@ function resume() {
           </div>
         </Col>
         <Col lg={6} md={6} sm={12} xs={12}>
-          <div className="mx-auto p-4" style={{ backgroundColor: "#1A1A1A" }}>
+          <div className="mx-auto p-4 default-bg-color-black">
             <p className="default-sm-font m-0 default-color">2017-2020</p>
             <p className="default-sm-font m-0 text-white">
               Bachelor Degree of Computing
