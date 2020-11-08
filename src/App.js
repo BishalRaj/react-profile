@@ -6,6 +6,7 @@ import About from "./components/About/about";
 import Resume from "./components/Resume/resume";
 import Services from "./components/Services/services";
 import Skills from "./components/Skills/skills";
+import Projects from "./components/Projects/projects";
 import "./styles/style.css";
 // import { library } from "@fortawesome/fontawesome-svg-core";
 // import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -22,6 +23,7 @@ class App extends React.Component {
         <Resume />
         <Services />
         <Skills />
+        <Projects />
       </>
     );
   }

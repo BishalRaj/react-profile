@@ -3,7 +3,7 @@ import { Col, Container, ProgressBar, Row } from "react-bootstrap";
 
 function skills() {
   var skills = [];
-  for (let index = 0; index < 5; index++) {
+  for (let index = 0; index < 6; index++) {
     var now = randomNumber(0, 100);
 
     skills.push(

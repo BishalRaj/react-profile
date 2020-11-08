@@ -11,6 +11,17 @@ body {
 .c-h-700{
     height:700px;
 }
+
+.c-h-100{
+    height:100px;
+}
+.c-h-200{
+    height:200px;
+}
+.c-h-250{
+    height:250px;
+}
+
 .progress-bar span {
     position: absolute;
     top: -38px !important;
