@@ -139,6 +139,43 @@ body {
     text-transform: uppercase;
 }
 
+.project-img-container{
+    height: 100%;
+}
+.image-centered-text{
+    /* width: 92%; */
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.w-96{
+    width: 96% !important;
+}
+.w-92{
+    width: 92% !important;
+}
+
+.w-95{
+    width: 95% !important;
+}
+
+.img-col:hover .image-centered-text{
+    opacity: 1;
+    transition: 0.5s;
+    background-color: rgba(254, 188, 57, 0.8);
+}
+
+.img-col:hover .image-centered-text-lg{
+    opacity: 1;
+    transition: 0.5s;
+    background-color: rgba(254, 188, 57, 0.8);
+}
+
 
 @media (max-width: 768px) {
     .navbar{

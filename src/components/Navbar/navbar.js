@@ -45,9 +45,6 @@ function NavBar() {
               Projects
             </Nav.Link>
             <Nav.Link href="/" className="navs mx-2 ">
-              My Blog
-            </Nav.Link>
-            <Nav.Link href="/" className="navs mx-2 ">
               Contact
             </Nav.Link>
           </Nav>
