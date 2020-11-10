@@ -30,7 +30,7 @@ function footer() {
   return (
     <Container className="my-5" id="footer">
       <Row>
-        <Col lg={3}>
+        <Col lg={3} md={3} sm={6} xs={6}>
           <p className="default-sm-font text-white">About</p>
           <p className="my-4">
             Far far away, behind the word mountains, far from the countries
@@ -38,51 +38,51 @@ function footer() {
           </p>
         </Col>
 
-        <Col lg={3}>
+        <Col lg={3} md={3} sm={6} xs={6}>
           <p className="default-sm-font text-white">Links</p>
           <div className="my-4 footer mx-0">
             <ul className="mx-0 px-0">{links}</ul>
           </div>
         </Col>
 
-        <Col lg={3}>
+        <Col lg={3} md={3} sm={6} xs={6}>
           <p className="default-sm-font text-white">Services</p>
           <div className="my-4 footer mx-0">
             <ul className="mx-0 px-0">{service}</ul>
           </div>
         </Col>
 
-        <Col lg={3}>
+        <Col lg={3} md={6} sm={12} xs={12}>
           <p className="default-sm-font text-white">Have a Question?</p>
           <Row className="my-4">
-            <Col lg={1}>
+            <Col lg={1} md={1} sm={1} xs={1}>
               <FontAwesomeIcon icon={["fas", "map-marker-alt"]} />
             </Col>
-            <Col lg={1}></Col>
-            <Col lg={9} className="m-0 p-0">
+            <Col lg={1} md={1} sm={1} xs={1}></Col>
+            <Col lg={9} md={9} sm={9} xs={9} className="m-0 p-0">
               Karyabinayak-22, Lalitpur, Nepal
             </Col>
           </Row>
           <Row className="my-2">
-            <Col lg={1}>
+            <Col lg={1} md={1} sm={1} xs={1}>
               <FontAwesomeIcon icon={["fas", "phone-alt"]} />
             </Col>
-            <Col lg={1}></Col>
-            <Col lg={9} className="m-0 p-0">
+            <Col lg={1} md={1} sm={1} xs={1}></Col>
+            <Col lg={9} md={9} sm={9} xs={9} className="m-0 p-0">
               +977 9843219471
             </Col>
           </Row>
           <Row className="my-2">
-            <Col lg={1}>
+            <Col lg={1} md={1} sm={1} xs={1}>
               <FontAwesomeIcon icon={["fas", "envelope"]} />
             </Col>
-            <Col lg={1}></Col>
-            <Col lg={9} className="m-0 p-0">
+            <Col lg={1} md={1} sm={1} xs={1}></Col>
+            <Col lg={9} md={9} sm={9} xs={9} className="m-0 p-0">
               bisal1shakya @gmail.com
             </Col>
           </Row>
         </Col>
-        <Col lg={12}>
+        <Col lg={12} md={6}>
           <div
             className=" default-bg-color-black  d-flex align-items-center justify-content-center mb-5 icon-div float-left mr-3"
             style={{ borderRadius: "50%", height: "55px", width: "55px" }}

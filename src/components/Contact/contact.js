@@ -4,8 +4,6 @@ import { Col, Container, Row } from "react-bootstrap";
 import ContactForm from "./contact-form";
 
 function contact() {
-  var contacts = [];
-
   var data = [
     { key: "Address", value: "Karyabinayak-22,Lalitpur" },
     { key: "Contact Number", value: "+977-9843219471" },
@@ -13,9 +11,10 @@ function contact() {
     { key: "Website", value: "https://bishalraj.github.io/react-profile/" },
   ];
 
-  data.forEach((values) => {
-    contacts.push(
-      <Col lg={3} className="p-5">
+  var key = 0;
+  var contacts = data.map((values) => {
+    return (
+      <Col lg={3} className="p-5" key={key++}>
         <div
           className=" default-bg-color-black mx-auto d-flex align-items-center justify-content-center mb-4 icon-div"
           style={{ borderRadius: "50%", height: "100px", width: "100px" }}
