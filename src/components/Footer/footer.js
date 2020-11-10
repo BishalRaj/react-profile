@@ -2,6 +2,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 function footer() {
+  var linkData = ["Home", "About", "Services", "Projects", "Contact"];
+  var serviceData = [
+    "Web Design",
+    "Web Development",
+    "App Development",
+    "Data Analysis",
+    "Data Visualization",
+  ];
+  var key = 0;
+  var links = linkData.map((result) => {
+    return (
+      <li className="my-2" key={key++}>
+        {result}
+      </li>
+    );
+  });
+
+  var service = serviceData.map((result) => {
+    return (
+      <li className="my-2" key={key++}>
+        {result}
+      </li>
+    );
+  });
+
   return (
     <Container className="my-5" id="footer">
       <Row>
@@ -15,33 +40,21 @@ function footer() {
 
         <Col lg={3}>
           <p className="default-sm-font text-white">Links</p>
-          <p className="my-4 footer">
-            <ul className="mx-0 px-0">
-              <li className="my-2">Home</li>
-              <li className="my-2">About</li>
-              <li className="my-2">Services</li>
-              <li className="my-2">Projects</li>
-              <li className="my-2">Contact</li>
-            </ul>
-          </p>
+          <div className="my-4 footer mx-0">
+            <ul className="mx-0 px-0">{links}</ul>
+          </div>
         </Col>
 
         <Col lg={3}>
           <p className="default-sm-font text-white">Services</p>
-          <p className="my-4 footer">
-            <ul className="mx-0 px-0">
-              <li className="my-2">Web Design</li>
-              <li className="my-2">Web Development</li>
-              <li className="my-2">App Development</li>
-              <li className="my-2">Data Analysis</li>
-              <li className="my-2">Data Visualization </li>
-            </ul>
-          </p>
+          <div className="my-4 footer mx-0">
+            <ul className="mx-0 px-0">{service}</ul>
+          </div>
         </Col>
 
         <Col lg={3}>
           <p className="default-sm-font text-white">Have a Question?</p>
-          <Row className="my-2">
+          <Row className="my-4">
             <Col lg={1}>
               <FontAwesomeIcon icon={["fas", "map-marker-alt"]} />
             </Col>
