@@ -7,7 +7,7 @@ function services() {
   for (let index = 0; index < 4; index++) {
     serviceTab.push(
       <Col lg={4} className="mb-4" key={index}>
-        <div className="p-5 default-bg-color-black text-center service-div">
+        <div className="p-5 default-bg-color-black text-center icon-div">
           <span>
             {/* <FontAwesomeIcon
               icon={["far", "file-code"]}

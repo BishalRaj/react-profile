@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import ContactForm from "./contact-form";
 
 function contact() {
   var contacts = [];
@@ -16,7 +17,7 @@ function contact() {
     contacts.push(
       <Col lg={3} className="p-5">
         <div
-          className=" default-bg-color-black mx-auto d-flex align-items-center justify-content-center mb-4"
+          className=" default-bg-color-black mx-auto d-flex align-items-center justify-content-center mb-4 icon-div"
           style={{ borderRadius: "50%", height: "100px", width: "100px" }}
         >
           <FontAwesomeIcon
@@ -37,6 +38,7 @@ function contact() {
     <Container className="my-5 text-center ">
       <p className="default-md-font w-100 text-white mt-5 pt-5">Contact</p>
       <Row className="mb-4 ">{contacts}</Row>
+      <ContactForm />
     </Container>
   );
 }

@@ -107,24 +107,23 @@ body {
 
 .navs:hover:after{
     background-color:#FEBC39;
-    /* background-color: rgba(255, 255, 255, 0.9); */
     -webkit-transform: translateX(-50%) scaleX(1);
     transform:translateX(-50%) scaleX(1);
 }
 
-.service-div:hover{
+.icon-div:hover{
     background-color: #FEBC39 !important;
     transition: 1s;
 }
 
-.service-div:hover p{
+.icon-div:hover p{
     color:#1A1A1A !important;
 }
-.service-div:hover .default-color{
+.icon-div:hover .default-color{
     color:whitesmoke !important;
     fill:whitesmoke !important;
 }
-.service-div:hover .underscore{
+.icon-div:hover .underscore{
     background-color:#1A1A1A !important;
 }
 
@@ -143,7 +142,6 @@ body {
     height: 100%;
 }
 .image-centered-text{
-    /* width: 92%; */
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -169,13 +167,6 @@ body {
     transition: 0.5s;
     background-color: rgba(254, 188, 57, 0.8);
 }
-
-.img-col:hover .image-centered-text-lg{
-    opacity: 1;
-    transition: 0.5s;
-    background-color: rgba(254, 188, 57, 0.8);
-}
-
 
 @media (max-width: 768px) {
     .navbar{
