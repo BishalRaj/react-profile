@@ -4,22 +4,21 @@ import imgLarge from "./large.jpg";
 import imgSmall from "./small.jpg";
 function projects() {
   var projects = [];
-
+  var key = 0;
   for (let index = 0; index < 3; index++) {
     for (let y = 0; y < 2; y++) {
-      var fp, sp;
+      var fp = 8,
+        sp = 4;
+
       if (index === 0 ? true : false) {
         fp = 4;
         sp = 8;
-      } else {
-        fp = 8;
-        sp = 4;
       }
 
       var actualWidth = y === 0 ? fp : sp;
 
       projects.push(
-        <Col lg={actualWidth} className="c-h-250 img-col mb-4">
+        <Col lg={actualWidth} className="c-h-250 img-col mb-4" key={key++}>
           <div className="project-img-container w-100 overflow-hidden">
             <Image src={actualWidth === 4 ? imgSmall : imgLarge} fluid />
           </div>

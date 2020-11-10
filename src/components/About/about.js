@@ -3,6 +3,37 @@ import { Button, Col, Container, Image, Row } from "react-bootstrap";
 import logo from "../../images/one.png";
 
 function about() {
+  var aboutInfo = [];
+  // var data = [
+  //   ["Name:", "Bishal Raj Shakya"],
+  //   ["Date of birth:", "February 28, 1998"],
+  //   ["Address:", "Bungamati, Lalitpur, Nepal"],
+  //   ["Zip code:", "44700"],
+  //   ["Email:", "bisal1shakya@gmail.com"],
+  //   ["Phone:", "+977-9843219471"],
+  // ];
+  var data = [
+    { key: "Name:", value: "Bishal Raj Shakya" },
+    { key: "Date of birth:", value: "February 28, 1998" },
+    { key: "Address:", value: "Bungamati, Lalitpur, Nepal" },
+    { key: "Zip code:", value: "44700" },
+    { key: "Email:", value: "bisal1shakya@gmail.com" },
+    { key: "Phone:", value: "+977-9843219471" },
+  ];
+
+  var key = 1;
+  data.forEach((result) => {
+    aboutInfo.push(
+      <li className="d-flex my-2" key={key}>
+        <span className="default-xs-font text-light text-start w-25">
+          {result.key}
+        </span>
+        <span className="w-75  text-start">{result.value}</span>
+      </li>
+    );
+    key++;
+  });
+
   return (
     <Container className="mb-5">
       <Row>
@@ -24,44 +55,7 @@ function about() {
           </p>
 
           <ul style={{ listStyle: "none" }} className="p-0">
-            <li className="d-flex my-2">
-              <span className="default-xs-font text-light text-start w-25">
-                Name:
-              </span>
-              <span className="w-75  text-start">Bishal Raj Shakya</span>
-            </li>
-            <li className="d-flex my-2">
-              <span className="default-xs-font text-light text-start w-25">
-                Date of birth:
-              </span>
-              <span className="w-75  text-start">February 28, 1998</span>
-            </li>
-            <li className="d-flex my-2">
-              <span className="default-xs-font text-light text-start w-25">
-                Address:
-              </span>
-              <span className="w-75  text-start">
-                Bungamati, Lalitpur, Nepal
-              </span>
-            </li>
-            <li className="d-flex my-2">
-              <span className="default-xs-font text-light text-start w-25">
-                Zip code:
-              </span>
-              <span className="w-75  text-start">44700</span>
-            </li>
-            <li className="d-flex my-2">
-              <span className="default-xs-font text-light text-start w-25">
-                Email:
-              </span>
-              <span className="w-75  text-start">bisal1shakya@gmail.com</span>
-            </li>
-            <li className="d-flex my-2">
-              <span className="default-xs-font text-light text-start w-25">
-                Phone:
-              </span>
-              <span className="w-75  text-start">+977-9843219471</span>
-            </li>
+            {aboutInfo}
           </ul>
 
           <p
