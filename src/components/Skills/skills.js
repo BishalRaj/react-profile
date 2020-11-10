@@ -21,7 +21,7 @@ function skills() {
     );
   }
   return (
-    <Container className="my-5">
+    <Container className="my-5" id="skill">
       <p className="default-md-font w-100 text-center text-white mt-5 pt-5">
         Skills
       </p>

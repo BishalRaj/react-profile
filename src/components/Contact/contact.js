@@ -35,9 +35,9 @@ function contact() {
   });
 
   return (
-    <Container className="my-5 text-center ">
+    <Container className="my-5 text-center " id="contact">
       <p className="default-md-font w-100 text-white mt-5 pt-5">Contact</p>
-      <Row className="mb-4 ">{contacts}</Row>
+      <Row>{contacts}</Row>
       <ContactForm />
     </Container>
   );

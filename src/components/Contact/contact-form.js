@@ -3,14 +3,14 @@ import { Button, Col, Form, Image, Row } from "react-bootstrap";
 import img from "../../images/one.png";
 function form() {
   return (
-    <Row className="mb-4">
+    <Row>
       <Col
         lg={6}
-        className="overflow-hidden d-flex align-items-center justify-content-center default-bg-color-black"
+        className="overflow-hidden d-flex align-items-center justify-content-center default-bg-color-black mb-5"
       >
         <Image src={img} fluid></Image>
       </Col>
-      <Col lg={6} className="bg-light p-5">
+      <Col lg={6} className="bg-light p-5 mb-5">
         <Form>
           <Form.Group>
             {/* <Form.Label>Name</Form.Label> */}

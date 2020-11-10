@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Poppins", Arial, sans-serif;
     background: #000000;
@@ -166,6 +169,14 @@ body {
     opacity: 1;
     transition: 0.5s;
     background-color: rgba(254, 188, 57, 0.8);
+}
+
+.footer ul li:before {
+
+    content: "\2192 \0020";
+}
+ul {
+list-style: none;
 }
 
 @media (max-width: 768px) {

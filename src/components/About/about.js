@@ -35,7 +35,7 @@ function about() {
   });
 
   return (
-    <Container className="mb-5">
+    <Container className="mb-5" id="about">
       <Row>
         <Col
           sm={0}
@@ -64,7 +64,7 @@ function about() {
           >
             <span className="default-color">5</span> Project complete
           </p>
-          <Button variant="warning" className="btn-rounded p-2">
+          <Button variant="warning" className="btn-rounded px-4 py-2">
             <strong>DOWNLOAD CV</strong>
           </Button>
         </Col>

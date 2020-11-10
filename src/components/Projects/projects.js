@@ -46,7 +46,7 @@ function projects() {
   }
 
   return (
-    <Container className="my-5 text-center ">
+    <Container className="my-5 text-center " id="projects">
       <p className="default-md-font w-100 text-white mt-5 pt-5">My Projects</p>
       <Row className="mb-4 ">{projects}</Row>
     </Container>

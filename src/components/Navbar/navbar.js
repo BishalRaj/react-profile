@@ -26,25 +26,25 @@ function NavBar() {
           className="mr-5 justify-content-end"
         >
           <Nav className="">
-            <Nav.Link href="#home" className="navs mx-2  active">
+            <Nav.Link href="#intro" className="navs mx-2  active">
               Home
             </Nav.Link>
-            <Nav.Link href="/" className="navs mx-2 ">
+            <Nav.Link href="#about" className="navs mx-2 ">
               About
             </Nav.Link>
-            <Nav.Link href="/" className="navs mx-2 ">
+            <Nav.Link href="#resume" className="navs mx-2 ">
               Resume
             </Nav.Link>
-            <Nav.Link href="/" className="navs mx-2 ">
+            <Nav.Link href="#service" className="navs mx-2 ">
               Services
             </Nav.Link>
-            <Nav.Link href="/" className="navs mx-2 ">
+            <Nav.Link href="#skill" className="navs mx-2 ">
               Skills
             </Nav.Link>
-            <Nav.Link href="/" className="navs mx-2 ">
+            <Nav.Link href="#projects" className="navs mx-2 ">
               Projects
             </Nav.Link>
-            <Nav.Link href="/" className="navs mx-2 ">
+            <Nav.Link href="#contact" className="navs mx-2 ">
               Contact
             </Nav.Link>
           </Nav>
