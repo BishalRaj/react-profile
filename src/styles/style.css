@@ -11,6 +11,23 @@ body {
 }
 
 
+.active{
+   
+    
+    transition: .9s;
+    color: white !important;
+    border-color: #FEBC39 !important;
+}
+
+.navs{
+    text-decoration: none !important;
+    padding: .5rem 1rem;
+    color: rgba(255, 255, 255, .5);
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+
+}
+
 .c-h-700{
     height:700px;
 }
@@ -82,14 +99,13 @@ body {
     letter-spacing: 3px;
 }
 
-.active{
-    color: #FEBC39 !important;
-}
+
 
 .navs:hover{
     position: relative;
     color: white !important;
     transition: .9s;
+
 }
 
 .navs:after{
@@ -108,11 +124,14 @@ body {
     transition: transform 500ms;
 }
 
+
 .navs:hover:after{
     background-color:#FEBC39;
     -webkit-transform: translateX(-50%) scaleX(1);
     transform:translateX(-50%) scaleX(1);
 }
+
+
 
 .icon-div:hover{
     background-color: #FEBC39 !important;

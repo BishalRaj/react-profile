@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-
+import { Link, animateScroll as scroll } from "react-scroll";
 function NavBar() {
   return (
     <Container>
@@ -25,28 +25,63 @@ function NavBar() {
           id="responsive-navbar-nav"
           className="mr-5 justify-content-end"
         >
-          <Nav className="">
-            <Nav.Link href="#intro" className="navs mx-2  active">
+          <Nav>
+            <Link
+              className="navs mx-2 "
+              activeClass="active later"
+              to="intro"
+              spy={true}
+            >
               Home
-            </Nav.Link>
-            <Nav.Link href="#about" className="navs mx-2 ">
+            </Link>
+            <Link
+              className="navs mx-2 "
+              activeClass="active later"
+              to="about"
+              spy={true}
+            >
               About
-            </Nav.Link>
-            <Nav.Link href="#resume" className="navs mx-2 ">
+            </Link>
+            <Link
+              className="navs mx-2 "
+              activeClass="active later"
+              to="resume"
+              spy={true}
+            >
               Resume
-            </Nav.Link>
-            <Nav.Link href="#service" className="navs mx-2 ">
+            </Link>
+            <Link
+              className="navs mx-2 "
+              activeClass="active later"
+              to="service"
+              spy={true}
+            >
               Services
-            </Nav.Link>
-            <Nav.Link href="#skill" className="navs mx-2 ">
+            </Link>
+            <Link
+              className="navs mx-2 "
+              activeClass="active later"
+              to="skill"
+              spy={true}
+            >
               Skills
-            </Nav.Link>
-            <Nav.Link href="#projects" className="navs mx-2 ">
+            </Link>
+            <Link
+              className="navs mx-2 "
+              activeClass="active later"
+              to="projects"
+              spy={true}
+            >
               Projects
-            </Nav.Link>
-            <Nav.Link href="#contact" className="navs mx-2 ">
+            </Link>
+            <Link
+              className="navs mx-2 "
+              activeClass="active later"
+              to="contact"
+              spy={true}
+            >
               Contact
-            </Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
