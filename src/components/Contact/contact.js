@@ -7,7 +7,7 @@ function contact() {
   var data = [
     { key: "Address", value: "Karyabinayak-22,Lalitpur" },
     { key: "Contact Number", value: "+977-9843219471" },
-    { key: "Email Address", value: "bisal1shakya@gmail.com" },
+    { key: "Email Address", value: "bisal1shakya @gmail.com" },
     { key: "Website", value: "https://bishalraj. github.io/react-profile/" },
   ];
 

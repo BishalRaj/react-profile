@@ -20,14 +20,14 @@ function Intro() {
             A Freelance Web Developer
           </h3>
           <p className="">
-            <Button variant="warning mr-1" className="btn-rounded p-2 w-25">
+            <Button variant="warning mr-1" className="rounded-pill py-2 px-5">
               <small>
                 <b>My Works</b>
               </small>
             </Button>
             <Button
               variant="outline-warning ml-1"
-              className="btn-rounded p-2 w-25"
+              className="rounded-pill py-2 px-5"
             >
               <small>
                 <b>Hire Me</b>
