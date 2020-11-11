@@ -6,11 +6,12 @@ function form() {
     <Row>
       <Col
         lg={6}
+        md={6}
         className="overflow-hidden d-flex align-items-center justify-content-center default-bg-color-black mb-5"
       >
         <Image src={img} fluid></Image>
       </Col>
-      <Col lg={6} className="bg-light p-5 mb-5">
+      <Col lg={6} md={6} className="bg-light p-5 mb-5">
         <Form>
           <Form.Group>
             {/* <Form.Label>Name</Form.Label> */}

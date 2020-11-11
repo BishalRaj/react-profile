@@ -6,7 +6,7 @@ function Intro() {
   return (
     <Container className="c-h-700" id="intro">
       <Row className="h-100 align-items-center">
-        <Col className="text-light" lg={6} xs={12}>
+        <Col className="text-light" lg={6} md={6} sm={12} xs={12}>
           <h6 className="font-weight-bold  default-color mb-4">
             HELLO! <span className="text-light ml-3">नमस्ते</span>
           </h6>
@@ -35,7 +35,7 @@ function Intro() {
             </Button>
           </p>
         </Col>
-        <Col lg={6} xs={12}>
+        <Col lg={6} md={6} xs={12}>
           <Image src={logo} className="w-100" />
         </Col>
       </Row>

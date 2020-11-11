@@ -18,7 +18,14 @@ function projects() {
       var actualWidth = y === 0 ? fp : sp;
 
       projects.push(
-        <Col lg={actualWidth} className="c-h-250 img-col mb-4" key={key++}>
+        <Col
+          lg={actualWidth}
+          md={actualWidth}
+          sm={12}
+          xs={12}
+          className="c-h-250 img-col mb-4"
+          key={key++}
+        >
           <div className="project-img-container w-100 overflow-hidden">
             <Image src={actualWidth === 4 ? imgSmall : imgLarge} fluid />
           </div>

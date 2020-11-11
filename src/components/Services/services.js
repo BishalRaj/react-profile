@@ -6,7 +6,7 @@ function services() {
   const serviceTab = [];
   for (let index = 0; index < 5; index++) {
     serviceTab.push(
-      <Col lg={4} className="mb-4" key={index}>
+      <Col lg={4} md={6} sm={12} xs={12} className="mb-4" key={index}>
         <div className="p-5 default-bg-color-black text-center icon-div">
           <span>
             <Logo className="w-25 my-3 default-color" />

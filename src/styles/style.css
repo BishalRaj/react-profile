@@ -12,8 +12,6 @@ body {
 
 
 .active{
-   
-    
     transition: .9s;
     color: white !important;
     border-color: #FEBC39 !important;
@@ -202,5 +200,20 @@ list-style: none;
     .navbar{
         margin-left: 0px !important;
         margin-right: 0px !important;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .sm-d-none{
+       display: none !important;
+    }
+
+    .sm-my-0{
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    .sm-py-5{
+        padding-top: 5% !important;
+        padding-bottom: 5% !important;
     }
   }

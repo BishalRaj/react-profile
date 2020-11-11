@@ -38,13 +38,15 @@ function about() {
     <Container className="mb-5" id="about">
       <Row>
         <Col
+          lg={6}
+          md={6}
           sm={0}
           xs={0}
-          className="d-flex flex-wrap align-items-center justify-content-center"
+          className="d-flex flex-wrap align-items-center justify-content-center sm-d-none"
         >
           <Image src={logo} className="w-100 my-auto" />
         </Col>
-        <Col className="">
+        <Col lg={6} md={6} sm={12} xs={12}>
           <div className="w-100 text-start font-weight-bold text-light default-md-font">
             About Me
           </div>

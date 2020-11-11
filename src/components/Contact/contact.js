@@ -8,13 +8,20 @@ function contact() {
     { key: "Address", value: "Karyabinayak-22,Lalitpur" },
     { key: "Contact Number", value: "+977-9843219471" },
     { key: "Email Address", value: "bisal1shakya@gmail.com" },
-    { key: "Website", value: "https://bishalraj.github.io/react-profile/" },
+    { key: "Website", value: "https://bishalraj. github.io/react-profile/" },
   ];
 
   var key = 0;
   var contacts = data.map((values) => {
     return (
-      <Col lg={3} className="p-5" key={key++}>
+      <Col
+        lg={3}
+        md={3}
+        sm={12}
+        xs={12}
+        className="p-5 sm-my-0 sm-py-5"
+        key={key++}
+      >
         <div
           className=" default-bg-color-black mx-auto d-flex align-items-center justify-content-center mb-4 icon-div"
           style={{ borderRadius: "50%", height: "100px", width: "100px" }}
