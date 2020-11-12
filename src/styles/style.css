@@ -204,6 +204,9 @@ list-style: none;
   }
 
   @media (max-width: 425px) {
+      .c-h-700{
+          margin-top: 30%;
+      }
     .sm-d-none{
        display: none !important;
     }
