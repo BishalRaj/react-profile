@@ -2,6 +2,12 @@ import React from "react";
 import { Button, Col, Container, Image, Row } from "react-bootstrap";
 import logo from "../../images/one.png";
 
+function cvClicked() {
+  const url =
+    "https://public.tableau.com/profile/bishal6012#!/vizhome/PersonalCV/A4CV";
+  window.open(url, "_blank");
+}
+
 function about() {
   var aboutInfo = [];
   // var data = [
@@ -66,8 +72,12 @@ function about() {
           >
             <span className="default-color">5</span> Project complete
           </p>
-          <Button variant="warning" className="btn-rounded px-4 py-2">
-            <strong>DOWNLOAD CV</strong>
+          <Button
+            variant="warning"
+            className="btn-rounded px-4 py-2"
+            onClick={cvClicked()}
+          >
+            <strong>VIEW CV</strong>
           </Button>
         </Col>
       </Row>
