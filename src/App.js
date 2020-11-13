@@ -24,21 +24,20 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    window.addEventListener("storage", this.checkStorage);
+    window.addEventListener("colorTheme", this.checkStorage);
   }
 
   componentWillUnmount() {
-    window.removeEventListener("storage", this.checkStorage);
+    window.removeEventListener("colorTheme", this.checkStorage);
   }
-  //effect
-  checkStorage = (e) => {
-    console.log(e);
-    const currentTheme = localStorage.getItem("theme");
-    if (currentTheme) {
-      this.setState({ currentTheme: currentTheme });
-    } else {
-      this.setState({ currentTheme: "theme-dark" });
-    }
+
+  checkStorage = () => {
+    return localStorage.getItem("theme");
+    // if (currentTheme) {
+    //   this.setState({ currentTheme: currentTheme });
+    // } else {
+    //   this.setState({ currentTheme: "theme-dark" });
+    // }
   };
 
   handleClick = (theme) => {
@@ -50,10 +49,12 @@ class App extends React.Component {
   };
 
   render() {
-    //state
-
     return (
-      <div className={`app ${this.state.colorTheme}`}>
+      <div
+        className={`app ${
+          this.checkStorage() ? this.checkStorage() : "theme-dark"
+        }`}
+      >
         <NavBar />
         <BottomNavBar clickMe={this.handleClick} />
         <Intro />

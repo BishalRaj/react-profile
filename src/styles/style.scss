@@ -51,26 +51,27 @@ body {
     background-color: #000000;
     .navbar{
     background-color: #000000;
-color: #999999;
+    color: #999999;
     }
     .default-bg-color-primary{
         background-color: #FEBC39;
         
     }
     .default-bg-color-secondary{
-        background-color: #1A1A1A !important;
+        background-color: #1A1A1A;
     }
     .default-color-primary{
-        fill: #FEBC39 ;
+        fill: #FEBC39;
         color:#FEBC39;
     }
     .default-color-secondary{
+        fill:#1A1A1A;
         color: #1A1A1A;
-        fill:  #1A1A1A;
     }
     p{
         color: #999999;
     }
+    
 }
 .app.theme-light{
    body{ background: #fff;}
@@ -253,7 +254,7 @@ color: #999999;
 .icon-div:hover p{
     color:#1A1A1A !important;
 }
-.icon-div:hover .default-color{
+.icon-div:hover .default-color-primary{
     color:whitesmoke !important;
     fill:whitesmoke !important;
 }
