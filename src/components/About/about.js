@@ -31,9 +31,7 @@ function about() {
   data.forEach((result) => {
     aboutInfo.push(
       <li className="d-flex my-2" key={key}>
-        <span className="default-xs-font text-light text-start w-25">
-          {result.key}
-        </span>
+        <span className="default-xs-font text-start w-25">{result.key}</span>
         <span className="w-75  text-start">{result.value}</span>
       </li>
     );
@@ -53,7 +51,7 @@ function about() {
           <Image src={logo} className="w-100 my-auto" />
         </Col>
         <Col lg={6} md={6} sm={12} xs={12}>
-          <div className="w-100 text-start font-weight-bold text-light default-md-font">
+          <div className="w-100 text-start font-weight-bold default-md-font">
             About Me
           </div>
 
@@ -66,16 +64,13 @@ function about() {
             {aboutInfo}
           </ul>
 
-          <p
-            className="default-xs-font text-light w-100"
-            style={{ fontSize: "25px" }}
-          >
-            <span className="default-color">5</span> Project complete
+          <p className="default-xs-font w-100" style={{ fontSize: "25px" }}>
+            <span className="default-color-primary">5</span> Project complete
           </p>
           <Button
             variant="warning"
             className="btn-rounded px-4 py-2"
-            onClick={cvClicked()}
+            onClick={() => cvClicked()}
           >
             <strong>VIEW CV</strong>
           </Button>

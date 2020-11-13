@@ -12,7 +12,6 @@ function NavBar() {
         variant="dark"
         // style={{ padding: "0px" }}
         className="px-4 py-3 mx-5"
-        style={{ backgroundColor: "black" }}
       >
         <Navbar.Brand
           style={{ fontWeight: "1200 !important" }}

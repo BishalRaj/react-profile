@@ -28,10 +28,10 @@ function footer() {
   });
 
   return (
-    <Container className="my-5" id="footer">
+    <Container className="py-3" id="footer">
       <Row>
         <Col lg={3} md={3} sm={6} xs={6}>
-          <p className="default-sm-font text-white">About</p>
+          <p className="default-sm-font">About</p>
           <p className="my-4">
             Far far away, behind the word mountains, far from the countries
             Vokalia and Consonantia, there live the blind texts.
@@ -39,21 +39,21 @@ function footer() {
         </Col>
 
         <Col lg={3} md={3} sm={6} xs={6}>
-          <p className="default-sm-font text-white">Links</p>
+          <p className="default-sm-font">Links</p>
           <div className="my-4 footer mx-0">
             <ul className="mx-0 px-0">{links}</ul>
           </div>
         </Col>
 
         <Col lg={3} md={3} sm={6} xs={6}>
-          <p className="default-sm-font text-white">Services</p>
+          <p className="default-sm-font">Services</p>
           <div className="my-4 footer mx-0">
             <ul className="mx-0 px-0">{service}</ul>
           </div>
         </Col>
 
         <Col lg={3} md={6} sm={12} xs={12}>
-          <p className="default-sm-font text-white">Have a Question?</p>
+          <p className="default-sm-font">Have a Question?</p>
           <Row className="my-4">
             <Col lg={1} md={1} sm={1} xs={1}>
               <FontAwesomeIcon icon={["fas", "map-marker-alt"]} />
@@ -84,33 +84,33 @@ function footer() {
         </Col>
         <Col lg={12} md={6}>
           <div
-            className=" default-bg-color-black  d-flex align-items-center justify-content-center mb-5 icon-div float-left mr-3"
+            className=" default-bg-color-secondary d-flex align-items-center justify-content-center mb-5 icon-div float-left mr-3"
             style={{ borderRadius: "50%", height: "55px", width: "55px" }}
           >
             <FontAwesomeIcon
               icon={["fab", "linkedin"]}
               size="2x"
-              className="default-color"
+              className="default-color-primary"
             ></FontAwesomeIcon>
           </div>
           <div
-            className=" default-bg-color-black  d-flex align-items-center justify-content-center mb-5 icon-div float-left mr-3"
+            className=" default-bg-color-secondary d-flex align-items-center justify-content-center mb-5 icon-div float-left mr-3"
             style={{ borderRadius: "50%", height: "55px", width: "55px" }}
           >
             <FontAwesomeIcon
               icon={["fab", "facebook"]}
               size="2x"
-              className="default-color"
+              className="default-color-primary"
             ></FontAwesomeIcon>
           </div>
           <div
-            className=" default-bg-color-black  d-flex align-items-center justify-content-center mb-5 icon-div "
+            className=" default-bg-color-secondary d-flex align-items-center justify-content-center mb-5 icon-div "
             style={{ borderRadius: "50%", height: "55px", width: "55px" }}
           >
             <FontAwesomeIcon
               icon={["fab", "github"]}
               size="2x"
-              className="default-color"
+              className="default-color-primary"
             ></FontAwesomeIcon>
           </div>
         </Col>

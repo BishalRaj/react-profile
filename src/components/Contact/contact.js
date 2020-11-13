@@ -23,13 +23,13 @@ function contact() {
         key={key++}
       >
         <div
-          className=" default-bg-color-black mx-auto d-flex align-items-center justify-content-center mb-4 icon-div"
+          className="default-bg-color-secondary mx-auto d-flex align-items-center justify-content-center mb-4 icon-div"
           style={{ borderRadius: "50%", height: "100px", width: "100px" }}
         >
           <FontAwesomeIcon
             icon={["far", "file-code"]}
             size="2x"
-            className="default-color"
+            className="default-color-primary"
           ></FontAwesomeIcon>
         </div>
         <p className="p-0 m-0 text-uppercase default-xs-font mb-2">
@@ -42,7 +42,7 @@ function contact() {
 
   return (
     <Container className="my-5 text-center " id="contact">
-      <p className="default-md-font w-100 text-white mt-5 pt-5">Contact</p>
+      <p className="default-md-font w-100 mt-5 pt-5">Contact</p>
       <Row>{contacts}</Row>
       <ContactForm />
     </Container>

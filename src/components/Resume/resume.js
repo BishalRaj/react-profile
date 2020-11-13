@@ -17,9 +17,11 @@ function resume() {
     data.forEach((res) => {
       resume.push(
         <Col lg={6} md={6} sm={12} xs={12} className="mb-4 " key={key++}>
-          <div className="mx-auto p-4 default-bg-color-black rounded">
-            <p className="default-sm-font m-0 default-color">{res.date}</p>
-            <p className="default-sm-font m-0 text-white">{res.degree}</p>
+          <div className="mx-auto p-4 default-bg-color-secondary rounded">
+            <p className="default-sm-font m-0 default-color-primary">
+              {res.date}
+            </p>
+            <p className="default-sm-font m-0">{res.degree}</p>
             <p className="letter-spacing-2">{res.uni}</p>
             <p>{res.desc}</p>
           </div>
@@ -30,9 +32,7 @@ function resume() {
 
   return (
     <Container className="my-5" id="resume">
-      <p className="default-md-font w-100 text-center text-white mt-5 pt-5">
-        Resume
-      </p>
+      <p className="default-md-font w-100 text-center mt-5 pt-5">Resume</p>
       <Row>{resume}</Row>
     </Container>
   );

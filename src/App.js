@@ -19,11 +19,43 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 
 library.add(fab, far, fas);
 class App extends React.Component {
+  state = {
+    colorTheme: "theme-dark",
+  };
+
+  componentDidMount() {
+    window.addEventListener("storage", this.checkStorage);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("storage", this.checkStorage);
+  }
+  //effect
+  checkStorage = (e) => {
+    console.log(e);
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme) {
+      this.setState({ currentTheme: currentTheme });
+    } else {
+      this.setState({ currentTheme: "theme-dark" });
+    }
+  };
+
+  handleClick = (theme) => {
+    this.setState({
+      colorTheme: theme,
+    });
+
+    localStorage.setItem("theme", theme);
+  };
+
   render() {
+    //state
+
     return (
-      <>
+      <div className={`app ${this.state.colorTheme}`}>
         <NavBar />
-        <BottomNavBar />
+        <BottomNavBar clickMe={this.handleClick} />
         <Intro />
         <About />
         <Resume />
@@ -32,7 +64,7 @@ class App extends React.Component {
         <Projects />
         <Contact />
         <Footer />
-      </>
+      </div>
     );
   }
 }

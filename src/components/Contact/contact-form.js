@@ -7,7 +7,7 @@ function form() {
       <Col
         lg={6}
         md={6}
-        className="overflow-hidden d-flex align-items-center justify-content-center default-bg-color-black mb-5"
+        className="overflow-hidden d-flex align-items-center justify-content-center default-bg-color-secondary-black mb-5"
       >
         <Image src={img} fluid></Image>
       </Col>
@@ -45,7 +45,7 @@ function form() {
           <Button
             variant="none"
             type="submit"
-            className="rounded-pill default-xxs-font px-5 py-3 default-bg-color text-uppercase letter-spacing-1"
+            className="rounded-pill default-xxs-font px-5 py-3 default-bg-color-primary text-uppercase letter-spacing-1"
           >
             Send Message
           </Button>

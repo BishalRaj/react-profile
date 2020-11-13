@@ -4,16 +4,16 @@ import logo from "../../images/one.png";
 
 function Intro() {
   return (
-    <Container className="c-h-700" id="intro">
+    <Container className="c-h-700 " id="intro">
       <Row className="h-100 align-items-center">
-        <Col className="text-light" lg={6} md={6} sm={12} xs={12}>
-          <h6 className="font-weight-bold  default-color mb-4">
-            HELLO! <span className="text-light ml-3">नमस्ते</span>
+        <Col lg={6} md={6} sm={12} xs={12}>
+          <h6 className="font-weight-bold default-color-primary mb-4">
+            HELLO! <span className=" ml-3">नमस्ते</span>
           </h6>
           <h1 className="font-weight-bold default-bg-font">
-            I'm <span className="default-color">Bishal</span>
+            I'm <span className="default-color-primary">Bishal</span>
           </h1>
-          <h1 className="font-weight-bold default-color default-bg-font">
+          <h1 className="font-weight-bold default-color-primary default-bg-font">
             Raj Shakya
           </h1>
           <h3 className="font-weight-normal  mt-4">

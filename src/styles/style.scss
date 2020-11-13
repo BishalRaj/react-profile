@@ -3,7 +3,7 @@ html{
 }
 body {
     font-family: "Poppins", Arial, sans-serif;
-    background: #000000;
+    // background: #000000;
     font-size: 16px;
     line-height: 1.8;
     font-weight: 400;
@@ -47,6 +47,107 @@ body {
     background-color: #E974AC;
 }
 
+.app.theme-dark{
+    background-color: #000000;
+    .navbar{
+    background-color: #000000;
+color: #999999;
+    }
+    .default-bg-color-primary{
+        background-color: #FEBC39;
+        
+    }
+    .default-bg-color-secondary{
+        background-color: #1A1A1A !important;
+    }
+    .default-color-primary{
+        fill: #FEBC39 ;
+        color:#FEBC39;
+    }
+    .default-color-secondary{
+        color: #1A1A1A;
+        fill:  #1A1A1A;
+    }
+    p{
+        color: #999999;
+    }
+}
+.app.theme-light{
+   body{ background: #fff;}
+    .default-bg-color-primary{
+        background-color: #fff !important;
+   }
+    .default-bg-color-secondary{
+        background-color: #000000  !important;
+    }
+    .default-color-primary{
+        color: #000000  !important;
+    }
+    .default-color-secondary{
+        color: #fff  !important;
+    }
+    p{
+        color: #000000  !important;
+    }
+}
+.app.theme-purple{
+    body{ background: #6600CD;}
+    background-color: #6600CD;
+    .default-bg-color-primary{
+        background-color: #6600CD !important;
+    }
+    .default-bg-color-secondary{
+        background-color: #fff;
+    }
+    .default-color-primary{
+        color: #fff;
+    }
+    .default-color-secondary{
+        color: #6600CD;
+    }
+    p{
+        color: #fff;
+    }
+}
+.app.theme-green{
+    body{ background: #0F3832;}
+
+    background-color: #0F3832;
+    .default-bg-color-primary{
+        background-color: #0F3832 !important;
+    }
+    .default-bg-color-secondary{
+        background-color: #fff;
+    }
+    .default-color-primary{
+        color: #fff;
+    }
+    .default-color-secondary{
+        color: #0F3832;
+    }
+    p{
+        color: #fff;
+    }
+}
+.app.theme-pink{
+    background: #E974AC;
+    .default-bg-color-primary{
+        background-color: #E974AC !important;
+    }
+    .default-bg-color-secondary{
+        background-color: #fff;
+    }
+    .default-color-primary{
+        color: #fff;
+    }
+    .default-color-secondary{
+        color: #E974AC;
+    }
+    p{
+        color: #fff;
+    }
+}
+
 .navs{
     text-decoration: none !important;
     padding: .5rem 1rem;
@@ -77,23 +178,6 @@ body {
     font-size: 20px;
     font-weight: 400;
     color: #fff;
-}
-.default-color-black{
-    fill:  #1A1A1A !important;
-
-   color: #1A1A1A !important;
-}
-.default-color{
-    fill: #FEBC39 !important;
-    color:#FEBC39 !important;
-}
-
-.default-bg-color{
-    background-color:#FEBC39 !important;
-}
-
-.default-bg-color-black{
-    background-color: #1A1A1A !important;
 }
 
 .default-bg-font{
