@@ -23,21 +23,8 @@ class App extends React.Component {
     colorTheme: "theme-dark",
   };
 
-  componentDidMount() {
-    window.addEventListener("colorTheme", this.checkStorage);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("colorTheme", this.checkStorage);
-  }
-
   checkStorage = () => {
     return localStorage.getItem("theme");
-    // if (currentTheme) {
-    //   this.setState({ currentTheme: currentTheme });
-    // } else {
-    //   this.setState({ currentTheme: "theme-dark" });
-    // }
   };
 
   handleClick = (theme) => {

@@ -7,7 +7,7 @@ function form() {
       <Col
         lg={6}
         md={6}
-        className="overflow-hidden d-flex align-items-center justify-content-center default-bg-color-secondary-black mb-5"
+        className="overflow-hidden d-flex align-items-center justify-content-center default-bg-color-secondary px-4 pt-4 mb-5"
       >
         <Image src={img} fluid></Image>
       </Col>
