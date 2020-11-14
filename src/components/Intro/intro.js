@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Col, Container, Image, Row } from "react-bootstrap";
+import { Link } from "react-scroll";
 import logo from "../../images/one.png";
 
 function Intro() {
@@ -18,16 +19,19 @@ function Intro() {
           </h1>
           <h3 className="font-weight-normal mt-4">A Freelance Web Developer</h3>
           <p className="">
-            <Button className="rounded-pill py-2 px-5">
+            <Link to="projects" className="btn rounded-pill py-2 px-5">
               <small>
                 <b>My Works</b>
               </small>
-            </Button>
-            <Button className="rounded-pill outline-btn ml-2 py-2 px-5">
+            </Link>
+            <Link
+              to="contact"
+              className="btn rounded-pill outline-btn ml-2 py-2 px-5"
+            >
               <small>
-                <b>Hire Me</b>
+                <b>Contact Me</b>
               </small>
-            </Button>
+            </Link>
           </p>
         </Col>
         <Col lg={6} md={6} xs={12}>

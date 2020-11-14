@@ -169,7 +169,7 @@ body {
     }
    
   
-    h1, h3, h4{
+    h1, h3, h4, li, .question .row div{
         color:#000000;
     }
     .navs:hover{
@@ -289,7 +289,7 @@ body {
 }
 
 .app.theme-green{
-    body{ background: #0F3832;}
+
     .navbar{
         background-color: #0F3832;
         color: #999999 !important;
@@ -316,7 +316,7 @@ body {
         background-color: #0F3832 !important;
     }
     .default-bg-color-secondary{
-        background-color: #6F8784;
+        background-color: #1b665b;
     }
     .default-color-primary{
         fill: #FEBC39;
@@ -328,8 +328,15 @@ body {
     .default-md-font, .btn{
         color:#fff;
     }
-    p{
+    p,li, .question .row div{
         color: #fff;
+    }
+
+    .icon-div:hover {
+        .default-color-primary{
+            fill:#1b665b !important;
+            color: #1b665b !important;
+        }
     }
 }
 
