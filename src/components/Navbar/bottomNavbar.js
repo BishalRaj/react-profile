@@ -21,18 +21,18 @@ function bottomNavBar(props) {
           onClick={() => props.clickMe("theme-dark")}
         />
         <div
-          id="theme-light"
-          className={`color-palette ${
-            localStorage.getItem("theme") === "theme-light" ? "active" : ""
-          }`}
-          onClick={() => props.clickMe("theme-light")}
-        />
-        <div
           id="theme-purple"
           className={`color-palette ${
             localStorage.getItem("theme") === "theme-purple" ? "active" : ""
           }`}
           onClick={() => props.clickMe("theme-purple")}
+        />
+        <div
+          id="theme-cyan"
+          className={`color-palette ${
+            localStorage.getItem("theme") === "theme-cyan" ? "active" : ""
+          }`}
+          onClick={() => props.clickMe("theme-cyan")}
         />
         <div
           id="theme-green"
@@ -49,11 +49,11 @@ function bottomNavBar(props) {
           onClick={() => props.clickMe("theme-pink")}
         />
         <div
-          id="theme-cyan"
+          id="theme-light"
           className={`color-palette ${
-            localStorage.getItem("theme") === "theme-cyan" ? "active" : ""
+            localStorage.getItem("theme") === "theme-light" ? "active" : ""
           }`}
-          onClick={() => props.clickMe("theme-cyan")}
+          onClick={() => props.clickMe("theme-light")}
         />
       </Navbar>
     </>
