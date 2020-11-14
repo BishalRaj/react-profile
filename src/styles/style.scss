@@ -114,6 +114,7 @@ body {
         color: #fff;
     }
 }
+
 .app.theme-light{
    body{ background: #fff;}
     .default-bg-color-primary{
@@ -172,40 +173,92 @@ body {
     }
 }
 
-// #E974AC
-$pink-primary:#ffffff;
-$pink-secondary:#F981A3;
-$pink-color-primary:#DE66A8;
-$pink-color-secondary:#87364E;
-.app.theme-pink{
-    background: $pink-primary;
-    .navbar{
-        background-color: $pink-primary;
-        color: #000000 !important;
-        }
 
+.app.theme-pink{
+   background-color: #EE4C7D;
     .default-bg-color-primary{
-        background-color: $pink-primary !important;
+        background-color: #991851;
     }
     .default-bg-color-secondary{
-        background-color: $pink-secondary;
+        background-color: #E3AFBC;
     }
     .default-color-primary{
-        fill: $pink-primary;
-        // color: $pink-primary;
+        color: #5D001D;
+        fill:#EE4C7D;
     }
     .default-color-secondary{
-        // color: $pink-secondary;
-        fill: $pink-secondary;
+        color: #fff;
+        
     }
-    // p{
-    //     color: $pink-color-primary;
-    // }
-
-    p, .h1, .h2, .h3, .h4, .h5, .h6{
-        color: #000000 !important;
+    .default-color-tertiary{
+        color: #EE4C7D !important;
+    }
+    .navbar{
+        background-color: #EE4C7D;
+        color: #5D001D !important;
     }
 
+    .navs:hover:after{
+            background-color:#5D001D;
+    }
+
+    .default-md-font{
+        color: #5D001D;
+    }
+   
+    p{
+        color:#E3E2DE;
+    }
+  
+    .outline-btn{
+        border-color: #5D001D;
+        color: #5D001D !important;
+    }
+
+    .outline-btn:hover{
+        background-color: #5D001D !important;
+        color: #EE4C7D !important;
+    }
+    .btn{
+        background-color: #5D001D;
+        color: #EE4C7D;
+    }
+   
+  
+    h1, h3, h4, li, .question .row div{
+        color:#fff;
+    }
+    .navs:hover{
+        color: #5D001D !important;
+    }
+    .active{
+        color: #fff !important;
+        border-color: #5D001D !important;
+    }
+
+
+    .icon-div:hover{
+        background-color: #991851 !important;
+    }
+    
+    .icon-div:hover p{
+        color:#0A0B0F !important;
+    }
+    .icon-div:hover .default-color-primary{
+        fill:#fff !important;
+    }
+    .icon-div:hover .underscore{
+        background-color:#fff !important;
+    }
+
+    .progress-bar{
+        background-color: #5D001D !important;
+    }
+    .img-col:hover .image-centered-text{
+      
+        background-color: rgba(153, 24, 81, 0.8);
+    }
+    
 }
 
 .app.theme-cyan{

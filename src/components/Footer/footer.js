@@ -52,7 +52,7 @@ function footer() {
           </div>
         </Col>
 
-        <Col lg={3} md={6} sm={12} xs={12}>
+        <Col lg={3} md={6} sm={12} xs={12} className="question">
           <p className="default-sm-font">Have a Question?</p>
           <Row className="my-4">
             <Col lg={1} md={1} sm={1} xs={1}>
