@@ -31,8 +31,12 @@ function about() {
   data.forEach((result) => {
     aboutInfo.push(
       <li className="d-flex my-2" key={key}>
-        <span className="default-xs-font text-start w-25">{result.key}</span>
-        <span className="w-75  text-start">{result.value}</span>
+        <span className="default-xs-font default-color-secondary text-start w-25">
+          {result.key}
+        </span>
+        <span className="w-75 text-start default-color-primary">
+          {result.value}
+        </span>
       </li>
     );
     key++;

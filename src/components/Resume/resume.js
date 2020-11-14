@@ -21,9 +21,11 @@ function resume() {
             <p className="default-sm-font m-0 default-color-primary">
               {res.date}
             </p>
-            <p className="default-sm-font m-0">{res.degree}</p>
+            <p className="default-sm-font m-0 default-color-secondary">
+              {res.degree}
+            </p>
             <p className="letter-spacing-2">{res.uni}</p>
-            <p>{res.desc}</p>
+            <p className="default-color-tertiary">{res.desc}</p>
           </div>
         </Col>
       );

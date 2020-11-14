@@ -9,7 +9,7 @@ function NavBar() {
         // sticky="top"
         fixed="top"
         expand="lg"
-        variant="dark"
+        // variant="dark"
         // style={{ padding: "0px" }}
         className="px-4 py-3 mx-5"
       >

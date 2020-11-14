@@ -9,7 +9,7 @@ function skills() {
     skills.push(
       <Col lg={6} md={6} sm={12} xs={12} className="mb-4" key={index}>
         <div className="w-100">
-          <p className="mx-0 my-1 default-xs-font text-white">
+          <p className="mx-0 my-1 default-xs-font">
             <span className="w-75 ">Node.JS</span>
             <span className="w-25 float-right text-end">{now}%</span>
           </p>
@@ -22,9 +22,7 @@ function skills() {
   }
   return (
     <Container className="my-5" id="skill">
-      <p className="default-md-font w-100 text-center text-white mt-5 pt-5">
-        Skills
-      </p>
+      <p className="default-md-font w-100 text-center mt-5 pt-5">Skills</p>
       <Row>{skills}</Row>
     </Container>
   );

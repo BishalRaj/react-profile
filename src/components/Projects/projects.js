@@ -30,7 +30,7 @@ function projects() {
             <Image src={actualWidth === 4 ? imgSmall : imgLarge} fluid />
           </div>
           <div
-            className="image-centered-text text-white h-100"
+            className="image-centered-text h-100"
             style={{
               width: actualWidth === 4 ? "92.5%" : "96.5%",
             }}
@@ -54,7 +54,7 @@ function projects() {
 
   return (
     <Container className="my-5 text-center " id="projects">
-      <p className="default-md-font w-100 text-white mt-5 pt-5">My Projects</p>
+      <p className="default-md-font w-100 mt-5 pt-5">My Projects</p>
       <Row className="mb-4 ">{projects}</Row>
     </Container>
   );

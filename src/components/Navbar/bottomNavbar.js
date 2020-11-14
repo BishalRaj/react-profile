@@ -48,6 +48,13 @@ function bottomNavBar(props) {
           }`}
           onClick={() => props.clickMe("theme-pink")}
         />
+        <div
+          id="theme-cyan"
+          className={`color-palette ${
+            localStorage.getItem("theme") === "theme-cyan" ? "active" : ""
+          }`}
+          onClick={() => props.clickMe("theme-cyan")}
+        />
       </Navbar>
     </>
   );

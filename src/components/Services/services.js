@@ -11,7 +11,7 @@ function services() {
           <span>
             <Logo className="w-25 my-3 default-color-primary " />
           </span>
-          <p className="text-center text-uppercase default-xxs-font letter-spacing-3">
+          <p className="text-center text-uppercase default-color-secondary default-xxs-font letter-spacing-3">
             Web Development
           </p>
 

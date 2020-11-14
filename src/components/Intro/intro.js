@@ -16,19 +16,14 @@ function Intro() {
           <h1 className="font-weight-bold default-color-primary default-bg-font">
             Raj Shakya
           </h1>
-          <h3 className="font-weight-normal  mt-4">
-            A Freelance Web Developer
-          </h3>
+          <h3 className="font-weight-normal mt-4">A Freelance Web Developer</h3>
           <p className="">
-            <Button variant="warning mr-1" className="rounded-pill py-2 px-5">
+            <Button className="rounded-pill py-2 px-5">
               <small>
                 <b>My Works</b>
               </small>
             </Button>
-            <Button
-              variant="outline-warning ml-1"
-              className="rounded-pill py-2 px-5"
-            >
+            <Button className="rounded-pill outline-btn ml-2 py-2 px-5">
               <small>
                 <b>Hire Me</b>
               </small>
