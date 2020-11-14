@@ -133,25 +133,87 @@ body {
         color: #000000  !important;
     }
 }
+
+
 .app.theme-purple{
-    body{ background: #6600CD;}
-    background-color: #6600CD;
+   
+    background-color: #000000;
+    .navbar{
+    background-color: #000000;
+    color: #999999 !important;
+    }
     .default-bg-color-primary{
-        background-color: #6600CD !important;
+        background-color: #DC04FD;
+        
     }
     .default-bg-color-secondary{
-        background-color: #fff;
+        background-color: #1A1A1A;
     }
     .default-color-primary{
-        color: #fff;
+        fill: #DC04FD;
+        color:#DC04FD;
     }
     .default-color-secondary{
-        color: #6600CD;
+        fill:#1A1A1A;
+        color: #1A1A1A;
     }
-    p{
+    p, .default-xxs-font, .default-xs-font{
+        color: #999999;
+    }
+
+    h4{
         color: #fff;
     }
+    .btn{
+        background-color: #DC04FD;
+        color: #fff;
+    }
+   
+
+    .default-md-font, .btn{
+        color:#fff;
+    }
+    .img-col:hover .image-centered-text p{
+      color:#fff;
+    }
+
+    .outline-btn{
+        border-color: #DC04FD;
+        color: #DC04FD !important;
+    }
+
+    .outline-btn:hover{
+        background-color: #DC04FD !important;
+        color: #fff !important;
+    }
+
+    .rounded .default-color-secondary{
+        color: #fff;
+    }
+    .navs:hover{
+        color: #DC04FD !important;
+    }
+    .navs:hover:after{
+        background-color:#DC04FD;
 }
+    .active{
+        color: white !important;
+        border-color: #DC04FD !important;
+    }
+    .img-col:hover .image-centered-text{
+        background-color: rgba(220, 4, 253, 0.5);
+    }
+    
+    .progress-bar{
+        background-color: #DC04FD !important;
+    }
+
+    .icon-div:hover{
+        background-color: #DC04FD !important;
+    }
+    
+}
+
 .app.theme-green{
     body{ background: #0F3832;}
 
