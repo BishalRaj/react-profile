@@ -30,6 +30,7 @@ body {
     }
 }
 
+
 #theme-dark{
     background-color: #000000;
 }
@@ -62,7 +63,7 @@ body {
     background-color: #000000;
     .navbar{
     background-color: #000000;
-    color: #999999;
+    color: #999999 !important;
     }
     .default-bg-color-primary{
         background-color: #FEBC39;
@@ -79,10 +80,39 @@ body {
         fill:#1A1A1A;
         color: #1A1A1A;
     }
-    p{
+    p, .default-xxs-font, .default-xs-font{
         color: #999999;
     }
-    
+
+    h4{
+        color: #fff;
+    }
+    .btn{
+        background-color: #FEBC39;
+        color: #fff;
+    }
+   
+
+    .default-md-font, .btn{
+        color:#fff;
+    }
+    .img-col:hover .image-centered-text p{
+      color:#fff;
+    }
+
+    .outline-btn{
+        border-color: #FEBC39;
+        color: #FEBC39 !important;
+    }
+
+    .outline-btn:hover{
+        background-color: #FEBC39 !important;
+        color: #fff !important;
+    }
+
+    .rounded .default-color-secondary{
+        color: #fff;
+    }
 }
 .app.theme-light{
    body{ background: #fff;}
