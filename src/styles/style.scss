@@ -47,6 +47,7 @@ body {
 }
 
 .app.theme-dark{
+   
     background-color: #000000;
     .navbar{
     background-color: #000000;
@@ -327,7 +328,8 @@ list-style: none;
 
   @media (max-width: 425px) {
       .c-h-700{
-          margin-top: 30%;
+        
+          padding-top: 30%;
       }
     .sm-d-none{
        display: none !important;
