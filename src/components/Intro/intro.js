@@ -31,7 +31,7 @@ function Intro() {
           </p>
         </Col>
         <Col lg={6} md={6} xs={12}>
-          <Image src={logo} className="w-100" />
+          <Image src={logo} className="w-75" />
         </Col>
       </Row>
     </Container>

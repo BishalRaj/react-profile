@@ -30,7 +30,6 @@ body {
     }
 }
 
-
 #theme-dark{
     background-color: #000000;
 }
@@ -116,24 +115,99 @@ body {
 }
 
 .app.theme-light{
-   body{ background: #fff;}
+    background-color: whitesmoke;
     .default-bg-color-primary{
-        background-color: #fff !important;
-   }
+        background-color: #000000;
+    }
     .default-bg-color-secondary{
-        background-color: #000000  !important;
+        background-color: #C5C6C8;
     }
     .default-color-primary{
-        color: #000000  !important;
+        color: #000000;
+        fill:#000000;
     }
     .default-color-secondary{
-        color: #fff  !important;
+        color: #0A0B0F;
+        
     }
-    p{
-        color: #000000  !important;
+    .default-color-tertiary{
+        color: #202833 !important;
     }
-}
+    .navbar{
+        background-color: whitesmoke;
+        
+    }
 
+    .navs{
+        color: #000000 !important;
+    }
+
+    .navs:hover:after{
+            background-color:#000000;
+    }
+
+    .default-md-font{
+        color: #000000;
+    }
+   
+    p{
+        color:#202833;
+    }
+  
+    .outline-btn{
+        border-color: #000000;
+        color: #000000 !important;
+    }
+
+    .outline-btn:hover{
+        background-color: #000000 !important;
+        color: whitesmoke !important;
+    }
+    .btn{
+        background-color: #000000;
+        color: #fff;
+    }
+   
+  
+    h1, h3, h4{
+        color:#000000;
+    }
+    .navs:hover{
+        color: #000000 !important;
+    }
+    .active{
+        color: #C0C0C0 !important;
+        border-color: #000000 !important;
+    }
+
+
+    .icon-div:hover{
+        background-color: #000000 !important;
+    }
+    
+    .icon-div:hover p{
+        color:#fff !important;
+    }
+    .icon-div:hover .default-color-primary{
+        fill:#fff !important;
+    }
+    .icon-div:hover .underscore{
+        background-color:#fff !important;
+    }
+
+    .progress-bar{
+        background-color: #000000 !important;
+    }
+    .img-col:hover{ 
+        .image-centered-text{
+            background-color: rgba(0, 0, 0, 0.5);
+            p{
+                color: #fff;
+            }
+        }
+    }
+    
+}
 
 .app.theme-purple{
    
@@ -258,7 +332,6 @@ body {
         color: #fff;
     }
 }
-
 
 .app.theme-pink{
    background-color: #EE4C7D;
