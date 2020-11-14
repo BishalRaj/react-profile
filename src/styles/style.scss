@@ -216,8 +216,28 @@ body {
 
 .app.theme-green{
     body{ background: #0F3832;}
-
+    .navbar{
+        background-color: #0F3832;
+        color: #999999 !important;
+    }
+    h4{
+        color: #fff;
+    }
     background-color: #0F3832;
+
+    .btn{
+        background-color: #FEBC39;
+        color: #fff;
+    }
+    .outline-btn{
+        border-color: #FEBC39;
+        color: #FEBC39 !important;
+    }
+
+    .outline-btn:hover{
+        background-color: #FEBC39 !important;
+        color: #fff !important;
+    }
     .default-bg-color-primary{
         background-color: #0F3832 !important;
     }
@@ -225,10 +245,14 @@ body {
         background-color: #6F8784;
     }
     .default-color-primary{
-        color: #fff;
+        fill: #FEBC39;
+        color:#FEBC39;
     }
     .default-color-secondary{
-        color: #0F3832;
+        color: whitesmoke;
+    }
+    .default-md-font, .btn{
+        color:#fff;
     }
     p{
         color: #fff;
