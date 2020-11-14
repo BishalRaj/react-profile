@@ -680,12 +680,17 @@ list-style: none;
         margin-left: 0px !important;
         margin-right: 0px !important;
     }
+    .intro-btn{
+        width: 48%;
+        font-size: small;
+    }
   }
 
   @media (max-width: 425px) {
       .c-h-700{
-        
-          padding-top: 30%;
+        padding-top: 15%;
+          margin-top: 15%;
+          margin-bottom: 25%;
       }
     .sm-d-none{
        display: none !important;
@@ -698,5 +703,12 @@ list-style: none;
     .sm-py-5{
         padding-top: 5% !important;
         padding-bottom: 5% !important;
+    }
+    .intro-btn{
+        width: 48%;
+        margin-bottom: 20%;
+        font-size: small;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
     }
   }

@@ -18,21 +18,25 @@ function Intro() {
             Raj Shakya
           </h1>
           <h3 className="font-weight-normal mt-4">A Freelance Web Developer</h3>
-          <p className="">
-            <Link to="projects" className="btn rounded-pill py-2 px-5">
-              <small>
-                <b>My Works</b>
-              </small>
-            </Link>
-            <Link
-              to="contact"
-              className="btn rounded-pill outline-btn ml-2 py-2 px-5"
-            >
-              <small>
-                <b>Contact Me</b>
-              </small>
-            </Link>
-          </p>
+
+          <Link
+            to="projects"
+            spy={true}
+            className="btn rounded-pill intro-btn py-2 px-5"
+          >
+            <small>
+              <b>My Works</b>
+            </small>
+          </Link>
+          <Link
+            to="contact"
+            spy={true}
+            className="btn rounded-pill intro-btn outline-btn ml-2 py-2 px-5"
+          >
+            <small>
+              <b>Contact Me</b>
+            </small>
+          </Link>
         </Col>
         <Col lg={6} md={6} xs={12}>
           <Image src={logo} className="w-75" />
