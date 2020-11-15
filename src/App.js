@@ -37,8 +37,8 @@ class App extends React.Component {
         }`}
       >
         <Router>
-          <Route path="/" exact component={Home} />
-          <Route path="/login" component={Auth} />
+          <Route path="/react-profile/" exact component={Home} />
+          <Route path="/react-profile/login" component={Auth} />
         </Router>
         <BottomNavBar clickMe={this.handleClick} />
       </div>
