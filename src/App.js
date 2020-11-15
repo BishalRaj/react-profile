@@ -1,15 +1,9 @@
 import React from "react";
+import { Route, BrowserRouter as Router } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
-import NavBar from "./components/Navbar/navbar";
+import Home from "./pages/home";
+import Auth from "./pages/auth";
 import BottomNavBar from "./components/Navbar/bottomNavbar";
-import Intro from "./components/Intro/intro";
-import About from "./components/About/about";
-import Resume from "./components/Resume/resume";
-import Services from "./components/Services/services";
-import Skills from "./components/Skills/skills";
-import Projects from "./components/Projects/projects";
-import Contact from "./components/Contact/contact";
-import Footer from "./components/Footer/footer";
 // import "./styles/style.css";
 import "./styles/style.scss";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -42,16 +36,11 @@ class App extends React.Component {
           this.checkStorage() ? this.checkStorage() : "theme-dark"
         }`}
       >
-        <NavBar />
+        <Router>
+          <Route path="/" exact component={Home} />
+          <Route path="/login" component={Auth} />
+        </Router>
         <BottomNavBar clickMe={this.handleClick} />
-        <Intro />
-        <About />
-        <Resume />
-        <Services />
-        <Skills />
-        <Projects />
-        <Contact />
-        <Footer />
       </div>
     );
   }

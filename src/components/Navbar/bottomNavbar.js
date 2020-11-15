@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar } from "react-bootstrap";
+// import { Route, BrowserRouter as Router } from "react-router-dom";
 function bottomNavBar(props) {
   return (
     <>
@@ -55,6 +56,9 @@ function bottomNavBar(props) {
           }`}
           onClick={() => props.clickMe("theme-light")}
         />
+        {/* <Router>Hello
+          <Route path="/"
+        </Router> */}
       </Navbar>
     </>
   );
