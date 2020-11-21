@@ -1,8 +1,9 @@
 import React from "react";
-import { Route, BrowserRouter as Router } from "react-router-dom";
+import { Route, BrowserRouter as Router, Redirect } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import Home from "./pages/home";
 import Auth from "./pages/auth";
+import Admin from "./pages/admin";
 import BottomNavBar from "./components/Navbar/bottomNavbar";
 // import "./styles/style.css";
 import "./styles/style.scss";
@@ -37,8 +38,20 @@ class App extends React.Component {
         }`}
       >
         <Router>
-          <Route path="/react-profile/" exact component={Home} />
           <Route path="/react-profile/login" component={Auth} />
+
+          {/* {localStorage.getItem("token") ? (
+            <Route path="/react-profile/admin" component={Admin} />
+          ) : (
+            <Redirect to={"/react-profile/login"} />
+          )}
+          {localStorage.getItem("token") ? (
+            <Redirect to={"/react-profile/admin"} />
+          ) : (
+            <Redirect to={"/react-profile/login"} />
+          )} */}
+
+          <Route path="/react-profile/" exact component={Home} />
         </Router>
         <BottomNavBar clickMe={this.handleClick} />
       </div>
