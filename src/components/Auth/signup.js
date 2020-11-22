@@ -4,7 +4,8 @@ import { Button, Col, Form, Row } from "react-bootstrap";
 function Signup(props) {
   const [un, setUn] = useState("");
   const [pwd, setPwd] = useState("");
-
+  const [errors, setErrors] = useState("");
+  var err = {};
   function handleChange() {
     props.onChange(true);
   }
@@ -22,7 +23,7 @@ function Signup(props) {
     Axios.post("http://localhost:8080/signup", userData)
       .then((response) => {
         console.log(response);
-        alert("User Registered");
+        alert(response.data.message);
       })
       .catch((err) => {
         console.log(err);
@@ -33,6 +34,7 @@ function Signup(props) {
     <Row className="w-100">
       <Col lg={6} className="mx-auto bg-light p-5">
         <Form>
+          {errors ? <div>{errors.message}</div> : ""}
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control

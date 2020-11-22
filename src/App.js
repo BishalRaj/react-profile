@@ -1,9 +1,9 @@
 import React from "react";
-import { Route, BrowserRouter as Router, Redirect } from "react-router-dom";
+import { Route, BrowserRouter as Router } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import Home from "./pages/home";
 import Auth from "./pages/auth";
-import Admin from "./pages/admin";
+// import Admin from "./pages/admin";
 import BottomNavBar from "./components/Navbar/bottomNavbar";
 // import "./styles/style.css";
 import "./styles/style.scss";

@@ -1,10 +1,11 @@
 import Axios from "axios";
 import React, { useState } from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
+import Cookies from "universal-cookie";
 function Login(props) {
   const [email, setEmail] = useState("");
   const [pwd, setPwd] = useState("");
-
+  const cookies = new Cookies();
   function handleChange() {
     props.onChange(false);
   }
@@ -19,10 +20,8 @@ function Login(props) {
   function login() {
     Axios.post("http://localhost:8080/login", { email: email, password: pwd })
       .then((reply) => {
-        console.log(reply);
-        if ((reply.data.status = 200)) {
-          alert("Login success");
-        }
+        cookies.set("token", reply.data.response, { path: "/" });
+        alert(cookies.get("token"));
       })
       .catch((err) => console.log(err));
   }
