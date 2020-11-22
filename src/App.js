@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, BrowserRouter as Router } from "react-router-dom";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import Home from "./pages/home";
 import Auth from "./pages/auth";
@@ -16,6 +16,8 @@ library.add(fab, far, fas);
 class App extends React.Component {
   state = {
     colorTheme: "theme-dark",
+    login_status: true,
+    user: {},
   };
 
   checkStorage = () => {
@@ -38,7 +40,7 @@ class App extends React.Component {
         }`}
       >
         <Router>
-          <Route path="/react-profile/login" component={Auth} />
+          {/* <Route path="/react-profile/login" component={Auth} /> */}
 
           {/* {localStorage.getItem("token") ? (
             <Route path="/react-profile/admin" component={Admin} />
@@ -51,7 +53,28 @@ class App extends React.Component {
             <Redirect to={"/react-profile/login"} />
           )} */}
 
-          <Route path="/react-profile/" exact component={Home} />
+          {/* <Route path="/react-profile/" exact component={Home} /> */}
+
+          <Switch>
+            <Route
+              exact
+              path={"/react-profile/"}
+              render={(props) => (
+                <Home
+                  {...props}
+                  // loginStatus={this.state.login_status}
+                />
+              )}
+            />
+
+            <Route
+              exact
+              path="/react-profile/login"
+              render={(props) => (
+                <Auth {...props} loginStatus={this.state.login_status} />
+              )}
+            />
+          </Switch>
         </Router>
         <BottomNavBar clickMe={this.handleClick} />
       </div>
