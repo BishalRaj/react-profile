@@ -6,11 +6,8 @@ function NavBar() {
     <Container>
       <Navbar
         collapseOnSelect
-        // sticky="top"
         fixed="top"
         expand="lg"
-        // variant="dark"
-        // style={{ padding: "0px" }}
         className="px-4 py-3 mx-5"
       >
         <Navbar.Brand

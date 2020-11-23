@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "../views/NavView/mainNav/navbar";
 import Intro from "../views/mainView/Intro/intro";
 import About from "../views/mainView/About/about";
@@ -9,13 +9,25 @@ import Projects from "../views/mainView/Projects/projects";
 import Contact from "../views/mainView/Contact/contact";
 import Footer from "../views/mainView/Footer/footer";
 import BottomNavBar from "../views/NavView/mainNav/bottomNavbar";
+import "../styles/homeStyle.scss";
 
 function Home(props) {
-  function handleClick(data) {
-    props.handleClick(data);
+  const [theme, settheme] = useState("theme-dark");
+
+  function checkStorage() {
+    return localStorage.getItem("theme");
   }
+
+  function toggleTheme(theme) {
+    settheme({
+      theme,
+    });
+
+    localStorage.setItem("theme", theme);
+  }
+
   return (
-    <>
+    <div className={`app ${checkStorage() ? checkStorage() : theme}`}>
       <NavBar />
       <Intro />
       <About />
@@ -25,8 +37,8 @@ function Home(props) {
       <Projects />
       <Contact />
       <Footer />
-      <BottomNavBar clickMe={handleClick} />
-    </>
+      <BottomNavBar clickMe={toggleTheme} />
+    </div>
   );
 }
 
