@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import "../styles/loginStyle.scss";
-import Login from "../components/Auth/login";
-import Register from "../components/Auth/signup";
+import Login from "../views/AuthView/login";
+import Register from "../views/AuthView/signup";
 function Auth(props) {
   const [login, setLogin] = useState(true);
 
@@ -12,11 +12,11 @@ function Auth(props) {
 
   function handleSuccessfulSignup(data) {
     //TODO update parent component
-    // props.history.push("/react-profile/");
     setLogin(true);
   }
 
-  function hangleSuccessfulLogin(data) {
+  function handleSuccessfulLogin(data) {
+    props.handleLogin(data);
     props.history.push("/react-profile/admin");
   }
 
@@ -25,7 +25,7 @@ function Auth(props) {
       {login ? (
         <Login
           onChange={handleChange}
-          handleSuccessfulLogin={hangleSuccessfulLogin}
+          handleSuccessfulLogin={handleSuccessfulLogin}
         />
       ) : (
         <Register

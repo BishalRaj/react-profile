@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Col, Container, Image, Row } from "react-bootstrap";
-import logo from "../../images/one.png";
+import logo from "../../../images/one.png";
 
 function cvClicked() {
   const url =

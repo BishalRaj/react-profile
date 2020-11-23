@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
 import { Link } from "react-scroll";
-import logo from "../../images/one.png";
+import logo from "../../../images/one.png";
 
 function Intro() {
   return (

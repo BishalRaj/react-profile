@@ -6,6 +6,7 @@ function Login(props) {
   const [email, setEmail] = useState("");
   const [pwd, setPwd] = useState("");
   const cookies = new Cookies();
+
   function handleChange() {
     props.onChange(false);
   }
@@ -13,6 +14,7 @@ function Login(props) {
   function handleEmailInput(e) {
     setEmail(e.target.value);
   }
+
   function handlePwdInput(e) {
     setPwd(e.target.value);
   }
@@ -22,6 +24,7 @@ function Login(props) {
       .then((reply) => {
         cookies.set("token", reply.data.response, { path: "/" });
         alert(cookies.get("token"));
+        props.handleSuccessfulLogin(reply);
       })
       .catch((err) => console.log(err));
   }

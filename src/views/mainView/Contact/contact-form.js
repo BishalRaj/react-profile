@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Col, Form, Image, Row } from "react-bootstrap";
-import img from "../../images/one.png";
+import img from "../../../images/one.png";
 function form() {
   return (
     <Row>

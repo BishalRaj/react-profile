@@ -1,10 +1,9 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
-import Home from "./pages/home";
-import Auth from "./pages/auth";
-// import Admin from "./pages/admin";
-import BottomNavBar from "./components/Navbar/bottomNavbar";
+import Home from "./layouts/home";
+import Auth from "./layouts/auth";
+import Admin from "./layouts/admin";
 // import "./styles/style.css";
 import "./styles/style.scss";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -14,11 +13,24 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 
 library.add(fab, far, fas);
 class App extends React.Component {
-  state = {
-    colorTheme: "theme-dark",
-    login_status: true,
-    user: {},
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      colorTheme: "theme-dark",
+      login_status: false,
+      user: {},
+    };
+    this.handleLogin = this.handleLogin.bind(this);
+  }
+
+  handleLogin(data) {
+    this.setState({
+      login_status: true,
+      user: data,
+    });
+
+    console.log(data);
+  }
 
   checkStorage = () => {
     return localStorage.getItem("theme");
@@ -40,43 +52,37 @@ class App extends React.Component {
         }`}
       >
         <Router>
-          {/* <Route path="/react-profile/login" component={Auth} /> */}
-
-          {/* {localStorage.getItem("token") ? (
-            <Route path="/react-profile/admin" component={Admin} />
-          ) : (
-            <Redirect to={"/react-profile/login"} />
-          )}
-          {localStorage.getItem("token") ? (
-            <Redirect to={"/react-profile/admin"} />
-          ) : (
-            <Redirect to={"/react-profile/login"} />
-          )} */}
-
-          {/* <Route path="/react-profile/" exact component={Home} /> */}
-
           <Switch>
+            {/* Main Route */}
             <Route
               exact
               path={"/react-profile/"}
               render={(props) => (
-                <Home
-                  {...props}
-                  // loginStatus={this.state.login_status}
-                />
+                <Home {...props} handleClick={this.handleClick} />
               )}
             />
 
+            {/* Auth */}
             <Route
               exact
               path="/react-profile/login"
               render={(props) => (
-                <Auth {...props} loginStatus={this.state.login_status} />
+                <Auth
+                  {...props}
+                  loginStatus={this.state.login_status}
+                  handleLogin={this.handleLogin}
+                />
               )}
+            />
+
+            {/* Admin Route */}
+            <Route
+              exact
+              path="/react-profile/admin"
+              render={(props) => <Admin {...props} />}
             />
           </Switch>
         </Router>
-        <BottomNavBar clickMe={this.handleClick} />
       </div>
     );
   }
