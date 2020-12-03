@@ -3,7 +3,7 @@ import {
   List,
   Datagrid,
   TextField,
-  DateField,
+  // DateField,
   EditButton,
   DeleteButton,
 } from "react-admin";
@@ -19,6 +19,8 @@ const aboutList = (props) => {
         <TextField source="zip" />
         <TextField source="email" />
         <TextField source="phone" />
+        <EditButton basePath="/about" />
+        <DeleteButton basePath="/about" />
       </Datagrid>
     </List>
   );
