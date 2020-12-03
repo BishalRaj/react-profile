@@ -25,8 +25,6 @@ class App extends React.Component {
       login_status: true,
       user: data,
     });
-
-    console.log(data);
   }
 
   render() {

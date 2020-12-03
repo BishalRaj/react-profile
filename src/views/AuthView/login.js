@@ -36,7 +36,7 @@ function Login(props) {
 
   return (
     <Row className="w-100 bg-light p-0 m-0">
-      {/* <Col lg={6} className="mx-auto bg-light p-5">
+      <Col lg={6} className="mx-auto bg-light p-5">
         <Form>
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
@@ -73,9 +73,8 @@ function Login(props) {
           </Button>
         </Form>
       </Col>
-     */}
 
-      <Box
+      {/* <Box
         display="flex"
         flexDirection="column"
         height="100%"
@@ -87,16 +86,7 @@ function Login(props) {
               email: "demo@devias.io",
               password: "Password123",
             }}
-            // validationSchema={Yup.object().shape({
-            //   email: Yup.string()
-            //     .email("Must be a valid email")
-            //     .max(255)
-            //     .required("Email is required"),
-            //   password: Yup.string().max(255).required("Password is required"),
-            // })}
-            // onSubmit={() => {
-            //   navigate("/app/dashboard", { replace: true });
-            // }}
+  
           >
             {({
               errors,
@@ -194,15 +184,14 @@ function Login(props) {
                 </Box>
                 <Typography color="textSecondary" variant="body1">
                   Don&apos;t have an account?{" "}
-                  {/* <Link component={RouterLink} to="/register" variant="h6">
-                    Sign up
-                  </Link> */}
+                 
                 </Typography>
               </form>
             )}
           </Formik>
         </Container>
       </Box>
+    */}
     </Row>
   );
 }

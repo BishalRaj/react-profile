@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import "../styles/loginStyle.scss";
 import Login from "../views/AuthView/login";
 import Register from "../views/AuthView/signup";
+import NavBar from "../views/NavView/adminNav/TopBar";
 function Auth(props) {
   const [login, setLogin] = useState(true);
 
@@ -21,19 +22,22 @@ function Auth(props) {
   }
 
   return (
-    <Container className="loginPage d-flex align-items-center justify-contect-center">
-      {login ? (
-        <Login
-          onChange={handleChange}
-          handleSuccessfulLogin={handleSuccessfulLogin}
-        />
-      ) : (
-        <Register
-          onChange={handleChange}
-          handleSuccessfulSignup={handleSuccessfulSignup}
-        />
-      )}
-    </Container>
+    <>
+      <NavBar />
+      <Container className="loginPage d-flex align-items-center justify-contect-center">
+        {login ? (
+          <Login
+            onChange={handleChange}
+            handleSuccessfulLogin={handleSuccessfulLogin}
+          />
+        ) : (
+          <Register
+            onChange={handleChange}
+            handleSuccessfulSignup={handleSuccessfulSignup}
+          />
+        )}
+      </Container>
+    </>
   );
 }
 export default Auth;
