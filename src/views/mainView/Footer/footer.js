@@ -2,6 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 function footer() {
+  var date = new Date();
+  var year = date.getFullYear();
   var linkData = ["Home", "About", "Services", "Projects", "Contact"];
   var serviceData = [
     "Web Design",
@@ -118,7 +120,7 @@ function footer() {
           lg={12}
           className="py-2 text-center default-xs-font letter-spacing-2"
         >
-          Copyright ©2020 All rights reserved
+          Copyright ©{year} All rights reserved
         </Col>
       </Row>
     </Container>
