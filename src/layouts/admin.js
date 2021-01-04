@@ -1,5 +1,10 @@
 import React from "react";
+import Navbar from "../views/NavView/AdminNav/NavBar";
 
 export default function AdminLayout() {
-  return <>Hello</>;
+  return (
+    <div>
+      <Navbar />
+    </div>
+  );
 }
