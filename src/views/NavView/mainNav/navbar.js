@@ -1,7 +1,8 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { Link as SecLink, Route, Switch } from "react-router-dom";
 import { Link } from "react-scroll";
-function NavBar() {
+function NavBar(props) {
   return (
     <Container>
       <Navbar
@@ -78,6 +79,14 @@ function NavBar() {
             >
               Contact
             </Link>
+
+            <SecLink
+              className="navs mx-2 "
+              activeClass="active later"
+              to="/react-profile/login"
+            >
+              Login
+            </SecLink>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
