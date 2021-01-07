@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NavBar from "../views/NavView/mainNav/navbar";
+import NavBar from "../views/NavView/MainNav/navbar";
 import Intro from "../views/mainView/Intro/intro";
 import About from "../views/mainView/About/about";
 import Resume from "../views/mainView/Resume/resume";
@@ -8,7 +8,7 @@ import Skills from "../views/mainView/Skills/skills";
 import Projects from "../views/mainView/Projects/projects";
 import Contact from "../views/mainView/Contact/contact";
 import Footer from "../views/mainView/Footer/footer";
-import BottomNavBar from "../views/NavView/mainNav/bottomNavbar";
+import BottomNavBar from "../views/NavView/MainNav/bottomNavbar";
 import "../styles/homeStyle.scss";
 
 function Home(props) {

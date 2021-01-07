@@ -13,7 +13,6 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    /* font-size: 2rem; */
 }
 
 .menu-bars{
@@ -37,7 +36,6 @@
 .nav-menu.active{
     left: 0;
     transition: 350ms;
-
 }
 
 .nav-text{

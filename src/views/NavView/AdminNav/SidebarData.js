@@ -10,13 +10,13 @@ export const SidebarData = [
     cName: "nav-text",
   },
   {
-    title: "Home",
+    title: "About",
     path: "/react-profile/admin",
     icon: <AiIcons.AiFillHome />,
     cName: "nav-text",
   },
   {
-    title: "Home",
+    title: "Contact",
     path: "/react-profile/admin",
     icon: <AiIcons.AiFillHome />,
     cName: "nav-text",

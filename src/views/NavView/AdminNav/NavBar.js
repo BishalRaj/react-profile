@@ -6,21 +6,25 @@ import { SidebarData } from "./SidebarData";
 import { IconContext } from "react-icons";
 import "./navbar.css";
 
-export default function Navbar() {
+export default function Navbar(props) {
   const [sidebar, setSidebar] = useState(false);
-  const showSideBar = () => setSidebar(!sidebar);
+  const showSideBar = () => {
+    setSidebar(!sidebar);
+    props.slide(!sidebar);
+  };
+
   return (
     <>
       <IconContext.Provider value={{ color: "green" }}>
         <div className="navbar" style={{ fontSize: "2rem" }}>
-          <Link to="#" className="menu_bars">
+          <Link className="menu_bars">
             <FaIcons.FaBars onClick={showSideBar} />
           </Link>
         </div>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
           <ul className="nav-menu-items">
             <li className="navbar-toggle" onClick={showSideBar}>
-              <Link to="#" className="menu-bars">
+              <Link className="menu-bars">
                 <AiIcons.AiOutlineClose />
               </Link>
             </li>
@@ -28,7 +32,10 @@ export default function Navbar() {
             {SidebarData.map((data, index) => {
               return (
                 <li key={index} className={data.cName}>
-                  <Link to={data.path}>
+                  <Link
+                    onClick={() => props.changePath(data.title)}
+                    // to={data.path}
+                  >
                     {data.icon}
                     <span>{data.title}</span>
                   </Link>
