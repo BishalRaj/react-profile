@@ -1,7 +1,7 @@
 import { Form, Button } from "react-bootstrap";
 import React, { useState } from "react";
 
-export default function About() {
+export default function Resume() {
   const [name, setname] = useState("");
   const [dob, setdob] = useState("");
   const [address, setaddress] = useState("");
@@ -30,7 +30,7 @@ export default function About() {
 
   return (
     <>
-      About
+      Resume
       <div className="p-5 w-50 mx-auto">
         <Form>
           <Form.Group>

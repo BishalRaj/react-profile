@@ -1,5 +1,4 @@
 import React from "react";
-import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 
 export const SidebarData = [
@@ -16,7 +15,7 @@ export const SidebarData = [
     cName: "nav-text",
   },
   {
-    title: "Contact",
+    title: "Resume",
     path: "/react-profile/admin",
     icon: <AiIcons.AiFillHome />,
     cName: "nav-text",

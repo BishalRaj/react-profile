@@ -3,8 +3,8 @@ import { useState } from "react";
 import Navbar from "../views/NavView/AdminNav/NavBar";
 import Home from "../views/adminView/home";
 import About from "../views/adminView/about";
-import Contact from "../views/adminView/contact";
-import "./layouts.css";
+import Resume from "../views/adminView/resume";
+import "../styles/adminStyles.css";
 
 export default function AdminLayout() {
   const [path, setpath] = useState("Home");
@@ -20,15 +20,7 @@ export default function AdminLayout() {
     <div>
       <Navbar changePath={handleClick} slide={showSideBar} />
       <div className={sidebar ? "admin-container-active" : "admin-container"}>
-        {path == "Home" ? (
-          <Home />
-        ) : path == "About" ? (
-          <About />
-        ) : path == "Contact" ? (
-          <Contact />
-        ) : (
-          <Home />
-        )}
+        {path == "About" ? <About /> : path == "Resume" ? <Resume /> : <Home />}
       </div>
     </div>
   );

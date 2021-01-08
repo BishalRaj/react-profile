@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import { Link as SecLink, Route, Switch } from "react-router-dom";
+import { Link as SecLink } from "react-router-dom";
 import { Link } from "react-scroll";
 function NavBar(props) {
   return (

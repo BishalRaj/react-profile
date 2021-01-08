@@ -1,11 +1,13 @@
 .admin-container{
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     transition: 850ms;
 }
 .admin-container-active{
     width: 75%;
     margin-left: 20%;
     transition: 350ms;
-    background-color: blue;
+    /* background-color: blue; */
 }
+
+
