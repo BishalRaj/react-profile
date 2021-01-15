@@ -25,7 +25,7 @@ function NavBar(props) {
           <Nav>
             <Link
               className="navs mx-2 "
-              activeClass="active later"
+              activeclass="active later"
               to="intro"
               spy={true}
             >
@@ -33,7 +33,7 @@ function NavBar(props) {
             </Link>
             <Link
               className="navs mx-2 "
-              activeClass="active later"
+              activeclass="active later"
               to="about"
               spy={true}
             >
@@ -41,7 +41,7 @@ function NavBar(props) {
             </Link>
             <Link
               className="navs mx-2 "
-              activeClass="active later"
+              activeclass="active later"
               to="resume"
               spy={true}
             >
@@ -49,7 +49,7 @@ function NavBar(props) {
             </Link>
             <Link
               className="navs mx-2 "
-              activeClass="active later"
+              activeclass="active later"
               to="service"
               spy={true}
             >
@@ -57,7 +57,7 @@ function NavBar(props) {
             </Link>
             <Link
               className="navs mx-2 "
-              activeClass="active later"
+              activeclass="active later"
               to="skill"
               spy={true}
             >
@@ -65,7 +65,7 @@ function NavBar(props) {
             </Link>
             <Link
               className="navs mx-2 "
-              activeClass="active later"
+              activeclass="active later"
               to="projects"
               spy={true}
             >
@@ -73,7 +73,7 @@ function NavBar(props) {
             </Link>
             <Link
               className="navs mx-2 "
-              activeClass="active later"
+              activeclass="active later"
               to="contact"
               spy={true}
             >
@@ -82,7 +82,7 @@ function NavBar(props) {
 
             <SecLink
               className="navs mx-2 "
-              activeClass="active later"
+              activeclass="active later"
               to="/react-profile/login"
             >
               Login

@@ -2,7 +2,7 @@ import { Form, Button } from "react-bootstrap";
 import React, { useState } from "react";
 import Axios from "axios";
 
-export default function Resume() {
+export default function Skills() {
   const [from, setfrom] = useState("");
   const [to, setto] = useState("");
   const [degree, setdegree] = useState("");
@@ -37,7 +37,7 @@ export default function Resume() {
       description: description,
     };
     console.log(data);
-    Axios.post("http://localhost:8080/resume", data).then((response) => {
+    Axios.post("http://localhost:8080/skills", data).then((response) => {
       setresponseMessage(response.data.message);
       setresponseStatus(response.status);
     });
@@ -45,7 +45,7 @@ export default function Resume() {
 
   return (
     <>
-      Resume
+      Skills
       <div className="px-5 w-50 mx-auto">
         {responseMessage ? (
           <p

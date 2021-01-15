@@ -1,16 +1,28 @@
-import { Form, Button } from "react-bootstrap";
+import { Form, Button, Col, Row, Alert } from "react-bootstrap";
 import React, { useState } from "react";
+import Axios from "axios";
 
 export default function About() {
-  const [name, setname] = useState("");
+  const [f_name, setf_name] = useState("");
+  const [m_name, setm_name] = useState("");
+  const [l_name, setl_name] = useState("");
   const [dob, setdob] = useState("");
   const [address, setaddress] = useState("");
   const [zip, setzip] = useState("");
   const [email, setemail] = useState("");
   const [phone, setphone] = useState("");
+  const [website, setwebsite] = useState("");
+  const [responseMessage, setresponseMessage] = useState("");
+  const [responseStatus, setresponseStatus] = useState("");
 
-  function handleNameInput(e) {
-    setname(e.target.value);
+  function handlefNameInput(e) {
+    setf_name(e.target.value);
+  }
+  function handlemNameInput(e) {
+    setm_name(e.target.value);
+  }
+  function handlelNameInput(e) {
+    setl_name(e.target.value);
   }
   function handleDobInput(e) {
     setdob(e.target.value);
@@ -27,21 +39,82 @@ export default function About() {
   function handlePhoneInput(e) {
     setphone(e.target.value);
   }
+  function handleWebsiteInput(e) {
+    setwebsite(e.target.value);
+  }
+
+  function onSubmit() {
+    const data = {
+      f_name: f_name,
+      m_name: m_name,
+      l_name: l_name,
+      dob: dob,
+      address: address,
+      zip: zip,
+      email: email,
+      phone: phone,
+      website: website,
+    };
+    Axios.post("http://localhost:8080/about", data)
+      .then((response) => {
+        setresponseMessage(response.data.message);
+        setresponseStatus(response.status);
+      })
+      .catch((err) => {
+        setresponseMessage(err.response.data.message);
+        setresponseStatus(err.response.status);
+      });
+  }
 
   return (
     <>
       About
-      <div className="p-5 w-50 mx-auto">
+      <div className="px-5 w-50 mx-auto">
+        {responseMessage ? (
+          <Alert
+            variant={
+              responseStatus === 200
+                ? "success"
+                : responseStatus === 401
+                ? "danger"
+                : "warning"
+            }
+          >
+            {responseMessage}
+          </Alert>
+        ) : (
+          ""
+        )}
         <Form>
-          <Form.Group>
-            <Form.Label>Name</Form.Label>
-            <Form.Control
-              type="text"
-              value={name}
-              onChange={handleNameInput}
-              placeholder="Enter full name"
-            />
-          </Form.Group>
+          <Form.Label>Name</Form.Label>
+          <Form.Row>
+            <Form.Group as={Col}>
+              <Form.Control
+                type="text"
+                value={f_name}
+                onChange={handlefNameInput}
+                placeholder="First name"
+              />
+            </Form.Group>
+
+            <Form.Group as={Col}>
+              <Form.Control
+                type="text"
+                value={m_name}
+                onChange={handlemNameInput}
+                placeholder="Middle name"
+              />
+            </Form.Group>
+
+            <Form.Group as={Col}>
+              <Form.Control
+                type="text"
+                value={l_name}
+                onChange={handlelNameInput}
+                placeholder="Last name"
+              />
+            </Form.Group>
+          </Form.Row>
           <Form.Group>
             <Form.Label>Date of Birth</Form.Label>
             <Form.Control
@@ -87,7 +160,18 @@ export default function About() {
               placeholder="Phone no."
             />
           </Form.Group>
-          <Button variant="primary">Submit</Button>
+          <Form.Group>
+            <Form.Label>Website Link</Form.Label>
+            <Form.Control
+              type="text"
+              value={website}
+              onChange={handleWebsiteInput}
+              placeholder="www.sthsthsth.com"
+            />
+          </Form.Group>
+          <Button variant="primary" onClick={onSubmit}>
+            Submit
+          </Button>
         </Form>
       </div>
     </>

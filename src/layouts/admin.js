@@ -4,6 +4,7 @@ import Navbar from "../views/NavView/AdminNav/NavBar";
 import Home from "../views/adminView/home";
 import About from "../views/adminView/about";
 import Resume from "../views/adminView/resume";
+import Skills from "../views/adminView/resume";
 import "../styles/adminStyles.css";
 
 export default function AdminLayout() {
@@ -19,8 +20,20 @@ export default function AdminLayout() {
   return (
     <div>
       <Navbar changePath={handleClick} slide={showSideBar} />
-      <div className={sidebar ? "admin-container-active" : "admin-container"}>
-        {path == "About" ? <About /> : path == "Resume" ? <Resume /> : <Home />}
+      <div
+        className={
+          sidebar ? "admin-container-active pb-5" : "admin-container pb-5"
+        }
+      >
+        {path === "About" ? (
+          <About />
+        ) : path === "Resume" ? (
+          <Resume />
+        ) : path === "Skills" ? (
+          <Skills />
+        ) : (
+          <Home />
+        )}
       </div>
     </div>
   );
