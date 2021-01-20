@@ -21,7 +21,10 @@ function Login(props) {
   }
 
   function login() {
-    Axios.post("http://localhost:8080/login", { email: email, password: pwd })
+    Axios.post("http://localhost:8080/user/login", {
+      email: email,
+      password: pwd,
+    })
       .then((reply) => {
         cookies.set("token", reply.data.response, { path: "/" });
         alert(cookies.get("token"));

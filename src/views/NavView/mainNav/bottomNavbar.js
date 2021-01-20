@@ -1,23 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Navbar } from "react-bootstrap";
-function bottomNavBar(props) {
+import "./navbar.css";
+function BottomNavBar(props) {
+  const [colorTabToggle, setcolorTabToggle] = useState("colorPalette");
+  const [toogle, settoogle] = useState(false);
+
+  useEffect(() => {
+    if (toogle) {
+      setcolorTabToggle("colorPalette active");
+    } else {
+      setcolorTabToggle("colorPalette");
+    }
+  }, [toogle]);
+
   return (
     <>
       <Navbar
         fixed="bottom"
         expand="lg"
         variant="dark"
-        className="p-5 mx-5"
+        className="p-5 mx-5 overflow-hidden"
         style={{
           backgroundColor: "transparent",
         }}
       >
-        <div
-          className="color-palette"
-          onClick={() => props.clickMe("theme-dark")}
-        />
+        <FontAwesomeIcon
+          icon={["fa", "cog"]}
+          size="2x"
+          className={`default-color-primary color-tab`}
+          onClick={() => settoogle(!toogle)}
+        ></FontAwesomeIcon>
 
-        <div>
+        <div className={colorTabToggle}>
           <div
             id="theme-dark"
             className={`color-palette ${
@@ -66,4 +81,4 @@ function bottomNavBar(props) {
   );
 }
 
-export default bottomNavBar;
+export default BottomNavBar;
