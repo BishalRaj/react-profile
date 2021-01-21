@@ -6,7 +6,7 @@ display: flex;
 }
 .colorPalette.active{
 display: flex;
-transition: 850ms;
+transition: 500ms;
 position: relative;
 left: 0;
 }
